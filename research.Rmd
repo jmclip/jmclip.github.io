@@ -1,0 +1,44 @@
+---
+title: "Research Interests"
+output: html_document
+---
+
+I'm an institutionalist at heart and most of the substance of my work explores how we create rules and meaning for ourselves. Methodologically, I am a computational social scientist interested in contributing to methodological approaches, such as text analysis and agent-based modeling. 
+
+# Ongoing projects
+I have three main projects in process right now -- all generally computational in nature, mostly focused upon how we make meaning. The third project, on ABMs, is a methodological project exploring how to maximize outcomes. 
+
+## Music lyrics
+
+This is a multifaceted project looking at new methodological approaches to text analysis. In the initial project, we explore one artist's cannon and analyze distinctions between rhetoric-focused and emotion-focused language, mapping a landscape across the career of Taylor Swift. This article just received a revise and resubmit. 
+
+Our follow-up project expands beyond one artist to look more generally at pop music. 
+
+## Place-making
+This project explores how fandom creates self-reinforcing structures. I scrape fandom subreddits, analyzing the content of discussions and how fans create expansive third places. 
+
+## ABM
+This project is a collaboration on ABM design from a perspective of better means to evaluate the model's success. We use machine learning to predict effective parameter combinations for more productive sweeps. 
+
+# Publications
+ Alter, K., Clipperton, J., Schraudenbach, E., & Rozier, L. (2020). Gender and Status in American Political Science: Who Determines Whether a Scholar Is Noteworthy? Perspectives on Politics, 18(4), 1048-1067. doi:10.1017/S1537592719004985
+
+## Non Peer-Reviewed Publications
+*	Clipperton, et al. Empirical Methods in Political Science: An Introduction Summer 2019
+	https://nulib-oer.github.io/empirical-methods-polisci/ 
+*	Alternative Final Assignment Format Tips and Tools, guest blog post with NU Digital Learning Fall 2020
+	https://canvaspost.northwestern.edu/2020/12/07/alternative-final-assignment-format-tips-and-tools/ 
+* 	Increasing Zoom Engagement, guest blog post with NU Digital Learning Fall 2020
+	https://canvaspost.northwestern.edu/2020/10/19/tips-for-zoom-engagement-in-the-virtual-classroom/ 
+*	Alternative Final Assignment Formats, guest blog post with NU Digital Learning Spring 2019 
+https://digitallearning.northwestern.edu/article/2019/04/23/alternative-final-assignment-formats
+* 	Incorporating Student feedback, guest blog post with NU Digital Learning Winter 2019
+		https://digitallearning.northwestern.edu/article/2019/01/31/incorporating-student-feedback-your-course 
+* 	Improving your Course, guest blog post with NU Digital Learning Fall 2018 
+		https://digitallearning.northwestern.edu/article/2018/09/10/easy-things-you-can-do-improve-your-course-and-your-teaching 
+
+
+# Working Papers
+* Clipperton, Jean, Josue Franco, Shane Nordyke, Melissa Shaffer O’Connell, Frederick Wood. 2020. “SOTL Research Design for Assessment of Interventions.” APSA Preprints. doi:10.33774/apsa-2020-gwfl0.
+
+

@@ -1,0 +1,15 @@
+# Wow!
+
+I could say more about this plant stuff I do, theoretically:
+
+```{r, echo = FALSE, warning=F, message = F}
+library(ggpubr)
+library(tidyverse)
+# Grouped Scatter plot with marginal density plots
+ggscatterhist(
+  iris, x = "Sepal.Length", y = "Sepal.Width",
+  color = "Species", size = 3, alpha = 0.6,
+  palette = c("#00AFBB", "#E7B800", "#FC4E07"),
+  margin.params = list(fill = "Species", color = "black", size = 0.2)
+  )
+```

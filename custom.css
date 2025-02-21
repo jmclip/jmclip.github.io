@@ -1,0 +1,87 @@
+#main .nav-pills > li.active > a,
+#main .nav-pills > li.active > a:hover,
+#main .nav-pills > li.active > a:focus {
+   background-color: #98b7eb;
+}
+
+#main .nav-pills > li > a:hover {
+  background-color: #4a6085;
+}
+
+#main a:link {
+  color: #4a6085;
+}
+
+/* visited link */
+#main a:visited {
+  color: #095484;
+}
+
+/* mouse over link */
+#main a:hover {
+  color: #4a6085;
+}
+
+/* selected link */
+#main a:active {
+  color: #716464;
+}
+
+h1,h2,h3,h4,h5,h6,legend{
+    color: #4a6085;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+h2 {
+  font-size: 25px;
+}
+
+body {
+  font-size: 16px;
+}
+
+#nav-top span.glyphicon {
+  color: #4a6085;
+}
+
+#table-of-contents header{
+    color:#4a6085;
+    background-color: #4a6085;
+}
+
+#table-of-contents h2{
+    background-color:#98b7eb;
+}
+
+
+
+a:hover{
+    color:#4a6085
+}
+
+a:visited{
+    color:#4a6085
+}
+
+#sidebar {
+    color: #D9AB16;
+    background: #4a6085;
+}
+
+#sidebar h2 {
+    color: #FFFFFF;
+    background-color: #98b7eb;
+}
+
+#sidebar a {
+    color: #FFFFFF;
+}
+
+#sidebar a:hover {
+    background-color: #3F4548;
+    color: #FFFFFF;
+}
+

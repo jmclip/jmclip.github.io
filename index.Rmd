@@ -1,11 +1,22 @@
 ---
-title: "Look at this!"
+title: "Welcome to my webpage!"
 ---
 
-### I have a webpage!
 
-And I can put all kinds of stuff on it!
+I am [Associate Director of MACSS and Associate Senior Instructional Professor](https://macss.uchicago.edu/directory/Jean-Clipperton) at the University of Chicago. I oversee our MA program's curriculum, mentor our teaching staff, and develop computationally-focused courses. 
 
-#### WOOHOO!
+## Research
 
-[Test!](about)
+My research focuses upon how we make meaning in the world, typically through institutions (formal and informal). To learn more about my projects, see [my research linked in the upper right corner](research.html).
+
+## Hobbies
+
+I love baking and cooking (but mostly baking), any and all baking-related shows (great british bake off is a fave), tea, yoga, Taylor Swift, and my dog, Betty.
+
+```{r, echo = F, out.width="49%", out.height="20%",fig.cap="Betty loves adventure",fig.show='hold',fig.align='center',fig.alt = "Very cute dog stares at camera, wearing a friendship necklace collar"}
+
+knitr::include_graphics(c("img/cute_betty.jpg","img/travel_betty.jpg"))
+
+```
+
+<meta property="og:image" content="img/travel_betty.jpg" />

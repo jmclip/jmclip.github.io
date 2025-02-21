@@ -1,14 +1,23 @@
-name: "Yay internet!"
+name: "Clipperton" #should be the title in the browswer tab
 output_dir: "."
+
 navbar:
-  title: "Home"
+  title: "Jean Clipperton, PhD: Computational Social Scientist"
   right:
-    - text: "About"
-      href: about.html
+    - text: "Home"
+      href: index.html
+    - text: 'Teaching' ## setting up a drop down menu
+      menu:
+        - text: 'Courses'
+          href: courses.html
+        - text: 'Teaching Philosophy'
+          href: teaching.html
+    - text: 'Research' 
+      href: research.html
     - icon: fa-github fa-lg
       href: http://github.com/jmclip
-sidebar:
-  - getting-started
-output:
-  html_document:
-    theme: spacelab
+output: 
+  rmdformats::readthedown:
+    toc_depth: 4
+    css: custom.css
+

@@ -1,0 +1,38 @@
+---
+title: "Courses"
+output: html_document
+---
+
+I teach methodologically focused courses using either R or Python (both have their advantages!).
+
+# Quantitative
+
+I teach our math camp to incoming first-year MACSS students and to any students interested in our certificate and/or strengthening their background in quantitative methods. It's a fast-paced course. The [github repo is available here](https://github.com/jmclip/MACSS_math_camp) and I built the course off materials from Benjamin Soltoff and Justin Grimmer, among others.
+
+# Python-Based
+I teach two courses primarily based in Python: an intro to programming course and an ABM course. 
+
+## Intro to Python 
+This is a course aimed at students new to programming. The Python course has been built and contributed to by many people, especially including Ann Rogers, Borja Sotomayor, and Zhao Wang. I continue to develop and interate on the material and the course materials are [available here on github](https://github.com/jmclip/macs30111). (Note: for this course, I use Canvas, so the repo is not particularly tidy!)
+
+## ABM: Agent-based Modeling
+This course is taught in Python using the Mesa library. It incorporates a blend of seminar-style readings and hands-on applications using canonical models in ABM. 
+
+For more information, see the [course repo on github](https://github.com/jmclip/MACSS-40550-ABM). 
+
+# R-based
+I teach two course that are primarily based in R: Computing for the Social Sciences and Data Vizualization. 
+ 
+## Computing for the social sciences (CFSS) 
+
+## Data viz
+Data Visualization is a very fun course and covers not only the fundamentals of visualization (primarily in R) but works on three important elements: Tableau, Shiny, and creating a website. Below you can see two examples from the course in their relative platforms. 
+
+### Tableau
+
+
+<iframe src="https://public.tableau.com/views/macs40700/BabyNamesDashboard?:showVizHome=no&:embed=true"
+ width="980px" height="900px"></iframe>
+### Shiny
+
+<iframe src="https://jclip.shinyapps.io/baby-names/" style="border: 1px solid #AAA; width: 800px; height: 760px"></iframe>
