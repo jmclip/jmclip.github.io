@@ -19,3 +19,7 @@ I love baking and cooking (but mostly baking), any and all baking-related shows 
 knitr::include_graphics(c("img/cute_betty.JPG","img/travel_betty.JPG"))
 
 ```
+
+
+<img src="img/cute_betty.JPG" alt="cute dog stares at camera">
+<img src="img/travel_betty.JPG" alt="cute dog sits in car">
