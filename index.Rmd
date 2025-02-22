@@ -14,12 +14,8 @@ My research focuses upon how we make meaning in the world, typically through ins
 
 I love baking and cooking (but mostly baking), any and all baking-related shows (great british bake off is a fave), tea, yoga, Taylor Swift, and my dog, Betty.
 
-```{r, echo = F, out.width="49%", out.height="20%",fig.cap="Betty loves adventure",fig.show='hold',fig.align='center',fig.alt = "Very cute dog stares at camera"}
+```{r, echo = F, out.width="30%", out.height="20%",fig.cap="Betty loves adventure",fig.show='hold',fig.align='center',fig.alt = "Very cute dog stares at camera"}
 
-knitr::include_graphics(c("img/cute_betty.JPG","img/travel_betty.JPG"))
+knitr::include_graphics(c("img/travel_betty.JPG", "img/cute_betty.JPG","img/happy_betty.JPG"))
 
 ```
-
-
-<img src="img/cute_betty.JPG" alt="cute dog stares at camera">
-<img src="img/travel_betty.JPG" alt="cute dog sits in car">
