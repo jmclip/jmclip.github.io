@@ -19,3 +19,7 @@ I love baking and cooking (but mostly baking), any and all baking-related shows 
 knitr::include_graphics(c("img/travel_betty.JPG", "img/cute_betty.JPG","img/happy_betty.JPG"))
 
 ```
+
+<meta property="og:title" content="Jean Clipperton, Computational Social Scientist"> 
+<meta property="og:image" content="img/cute_betty">
+    
