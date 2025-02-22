@@ -2,8 +2,9 @@
 title: "Welcome to my webpage!"
 ---
 
+# Hello!
 
-I am [Associate Director of MACSS and Associate Senior Instructional Professor](https://macss.uchicago.edu/directory/Jean-Clipperton) at the University of Chicago. I oversee our MA program's curriculum, mentor our teaching staff, and develop computationally-focused courses. 
+I am an [Associate Director of MACSS and Associate Senior Instructional Professor](https://macss.uchicago.edu/directory/Jean-Clipperton) at the University of Chicago. I oversee our MA program's curriculum, mentor our teaching staff, and develop computationally-focused courses. 
 
 ## Research
 
