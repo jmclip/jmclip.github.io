@@ -14,6 +14,8 @@ navbar:
           href: teaching.html
     - text: 'Research' 
       href: research.html
+    - icon: fa-brands fa-orcid
+      href: https://orcid.org/0000-0001-8833-0052
     - icon: fa-github fa-lg
       href: http://github.com/jmclip
 output: 
