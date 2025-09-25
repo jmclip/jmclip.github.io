@@ -16,6 +16,14 @@ In this project, I analyze songs used by US political candidates in their campai
 
 This is a multifaceted project looking at new methodological approaches to text analysis. In the initial project, we explore one artist's cannon and analyze distinctions between rhetoric-focused and emotion-focused language, mapping a landscape across the career of Taylor Swift. This article is forthcoming at *Psychology of Creativity, Aesthetics, and the Arts.*
 
+
+```{r, echo = F, out.width="80%", out.height="70%",fig.cap="PCA of Taylor Swift's Catalogue",fig.show='hold',fig.align='center',fig.alt = "Average data points for albums in Taylor Swift's catalogue from lyric to emotion-focused and negative to positive emotion"}
+
+knitr::include_graphics("img/ts_pca.png")
+```
+
+In it, we track the development of Swift as an artist, finding that her work incorporates a juxtaposition of contrasting emotions in what we term 'Swiftian Saudade.' Her work evolves from a more positive and lyrically focused space to one full of darker emotions. 
+
 Our follow-up project expands beyond one artist to look more generally at pop music. 
 
 ## Place-making
