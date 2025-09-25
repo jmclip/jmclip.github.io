@@ -1,10 +1,9 @@
 ---
 title: ""
-output: html_document
-metadata:
-  og:title: "Jean Clipperton, Ph.D, computational social scientist"
-  og:image: "https://jmclip.github.io/img/ts_pca.png"
----
+output: 
+  html_document:
+    includes:
+      in_header: meta.html
 
 ---
 
