@@ -1,0 +1,57 @@
+/*-- scss:defaults --*/
+
+$body-bg: mix(black, #e15921, 50%);  // 50% lighter toward white
+$body-color: #fff;
+$link-color: #8dd3c6;
+
+/*-- scss:rules --*/
+
+.reveal .slide blockquote {
+  border-left: 3px solid $text-muted;
+  padding-left: 0.5em;
+}
+
+/* Make first-slide subtitle larger */
+.reveal section:first-of-type p.subtitle {
+  font-size: 2em !important;   // scale as needed
+  color:#fff !important;   // optional color
+  font-style: italic !important; // optional weight
+  margin-top: 0.5em !important;
+}
+
+
+
+/* Base text size for everything */
+body, .reveal {
+  font-size: 1.5rem;  /* adjust to scale all text down */
+}
+
+/* Headings inside slides */
+.reveal section h1 {
+  font-size: 3.5em;       /* relative to body font-size */
+}
+
+.reveal section h2 {
+  font-size: 2.75em;
+}
+
+.reveal section h3 {
+  font-size: 2.5em;
+}
+
+.reveal section h4 {
+  font-size: 2.25em;
+}
+
+.reveal section h5 {
+  font-size: 2.1em;
+}
+
+.reveal section h6 {
+  font-size: 2em;
+}
+
+b, strong {
+  font-size: 1.1em; 
+}
+
