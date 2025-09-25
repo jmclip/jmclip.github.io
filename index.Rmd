@@ -3,7 +3,7 @@ title: ""
 output: html_document
 metadata:
   og:title: "Jean Clipperton, Ph.D, computational social scientist"
-  og:image: ""
+  og:image: "https://jmclip.github.io/img/ts_pca.png"
 ---
 
 ---
