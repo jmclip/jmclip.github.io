@@ -37,7 +37,7 @@ This project is a collaboration on ABM design from a perspective of better means
  Alter, K., Clipperton, J., Schraudenbach, E., & Rozier, L. (2020). Gender and Status in American Political Science: Who Determines Whether a Scholar Is Noteworthy? Perspectives on Politics, 18(4), 1048-1067. doi:10.1017/S1537592719004985
  
 # Talks
-* MACSS Computational Social Science Workshop, University of Chicago, Fall 2025
+* [MACSS Computational Social Science Workshop](talks/clipperton_workshop_25.html), University of Chicago, Fall 2025
 * Simpson College, Fall 2025
 
 ## Non Peer-Reviewed Publications
