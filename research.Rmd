@@ -6,22 +6,31 @@ output: html_document
 I'm an institutionalist at heart and most of the substance of my work explores how we create rules and meaning for ourselves. Methodologically, I am a computational social scientist interested in contributing to methodological approaches, such as text analysis and agent-based modeling. 
 
 # Ongoing projects
-I have three main projects in process right now -- all generally computational in nature, mostly focused upon how we make meaning. The third project, on ABMs, is a methodological project exploring how to maximize outcomes. 
+I have four main projects in process right now -- all generally computational in nature, mostly focused upon how we make meaning. The third project, on ABMs, is a methodological project exploring how to maximize outcomes. 
+
+## Political Candidate Playlists
+
+In this project, I analyze songs used by US political candidates in their campaigns in the 2016, 2020, and 2024 presidential elections. The project is underway, but in preliminary findings I observe that political candidates favor music incorporating themes of trust and increasingly use songs with prosocial messages. Republican candidates have less emotional music that has incorporated more male references over time. Democratic candidates have music that feature more moral references and has had a more negative tone over subsequent election cycles. 
 
 ## Music lyrics
 
-This is a multifaceted project looking at new methodological approaches to text analysis. In the initial project, we explore one artist's cannon and analyze distinctions between rhetoric-focused and emotion-focused language, mapping a landscape across the career of Taylor Swift. This article just received a revise and resubmit. 
+This is a multifaceted project looking at new methodological approaches to text analysis. In the initial project, we explore one artist's cannon and analyze distinctions between rhetoric-focused and emotion-focused language, mapping a landscape across the career of Taylor Swift. This article is forthcoming at *Psychology of Creativity, Aesthetics, and the Arts.*
 
 Our follow-up project expands beyond one artist to look more generally at pop music. 
 
 ## Place-making
 This project explores how fandom creates self-reinforcing structures. I scrape fandom subreddits, analyzing the content of discussions and how fans create expansive third places. 
 
+
 ## ABM
 This project is a collaboration on ABM design from a perspective of better means to evaluate the model's success. We use machine learning to predict effective parameter combinations for more productive sweeps. 
 
 # Publications
  Alter, K., Clipperton, J., Schraudenbach, E., & Rozier, L. (2020). Gender and Status in American Political Science: Who Determines Whether a Scholar Is Noteworthy? Perspectives on Politics, 18(4), 1048-1067. doi:10.1017/S1537592719004985
+ 
+# Talks
+* MACSS Computational Social Science Workshop, University of Chicago, Fall 2025
+* Simpson College, Fall 2025
 
 ## Non Peer-Reviewed Publications
 *	Clipperton, et al. Empirical Methods in Political Science: An Introduction Summer 2019

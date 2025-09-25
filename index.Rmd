@@ -4,15 +4,41 @@ title: ""
 
 # Hello!
 
-I am an [Associate Director of MACSS and Associate Senior Instructional Professor](https://macss.uchicago.edu/directory/Jean-Clipperton) at the University of Chicago. I oversee our MA program's curriculum, mentor our teaching staff, and develop computationally-focused courses. 
+I am an [Associate Director of MACSS and Associate Senior Instructional Professor](https://macss.uchicago.edu/directory/Jean-Clipperton) at the University of Chicago. I oversee our MA program's curriculum, mentor our teaching staff, and develop computationally-focused courses. I am a political scientist and computational social scientist and study how individuals create and interpret meaning through language, emotion, and culture, particularly in political contexts. My research bridges political communication, political behavior, sociology, psychology, and institutional analysis. At the center of my research is a core question: how do individuals and institutions use language to create shared understanding and construct identity? 
 
 ## Research
 
 My research focuses upon how we make meaning in the world, typically through institutions (formal and informal). To learn more about my projects, see [my research linked in the upper right corner](research.html).
 
+
+My career in political science began with an interest in what Douglass North calls ‘the rules of the game’ and this continues to drive my research focus. I pursue this through three ongoing projects, each providing a different perspective on the construction of meaning and identity. One explores how artists use language and sound to communicate emotion and meaning, offering insight into the cultural conventions that shape public expression. A second examines how political candidates use music, including in playlists and at events, to cultivate their image, communicate with voters, and build political brands. A third considers fandoms, specifically those connected to artists, as institutional communities that facilitate collective identity, enforce norms, and shape patterns of affiliation and engagement in the digital public sphere. Across all my projects, I examine how shared meaning shapes political belonging, identity, and expression.
+
+In earlier projects, I investigated how status and prestige are constructed and operate within the discipline of political science (Alter et al. 2020, Perspectives on Politics), and how institutional legacies shape the implementation of EU law. 
+
+### Meaning and Pop music
+Building on my interests in meaning and norms, I incorporate a behavioral and cultural lens to analyze how emotional language and symbols are used in political messaging and campaigning. This line of inquiry began with a close study of music as a site of emotional meaning. My forthcoming piece in Psychology of Aesthetics, Creativity, and the Arts examines the emotional language in Taylor Swift’s discography and its evolution over eras. I identify patterns in how artists use cultural and emotional signals to build narrative, identity, and connection. I am expanding upon these findings in a broader project on how pop music encodes emotional meaning. This expansion has implications for how political candidates strategically draw on the emotional and cultural meanings embedded in popular music to shape their public image, build political brands, and signal values to voters.
+
+### Methodoligcal focus
+I incorporate web scraping, natural language processing, and machine learning to analyze large-scale text and audio data. My interdisciplinary approach applies computational methods to classic political science questions—how identity is constructed, how elites communicate, and how meaning drives political behavior across cultural and institutional settings.
+
+## Teaching
+
+At the University of Chicago, I am an Associate Director of MACSS and Associate Senior Instructional Professor. I teach courses in data visualization, programming (in R and in Python), agent-based modeling, research design, in addition to our pre-matriculation Computational Math Camp. To learn more about this, you can visit the [Teaching](teaching.html) link in the above right corner.  
+
+### Teaching Expertise
+
+My teaching is primarily in three areas:
+
+- Programming (in Python and R) 
+- Research Design  
+- Methods (Agent-Based Modeling, Statistical Analysis)
+
+I am also developing a course on computational approaches to music from the perspective of the social sciences. 
+
+
 ## Hobbies
 
-I love baking and cooking (but mostly baking), any and all baking-related shows (great british bake off is a fave), tea, yoga, Taylor Swift, and my dog, Betty.
+I love baking and cooking (but mostly baking), any and all baking-related shows (Great British Bake off is a fave), tea, yoga, crafting (knitting and quilting), Taylor Swift, and my dog, Betty.
 
 ```{r, echo = F, out.width="30%", out.height="20%",fig.cap="Betty loves adventure",fig.show='hold',fig.align='center',fig.alt = "Very cute dog stares at camera"}
 

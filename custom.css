@@ -1,29 +1,30 @@
+/* Active nav pills */
 #main .nav-pills > li.active > a,
 #main .nav-pills > li.active > a:hover,
 #main .nav-pills > li.active > a:focus {
-   background-color: #56a86f;
+   background-color: #e15921; /* Showgirl Orange */
 }
 
 #main .nav-pills > li > a:hover {
-  background-color: #193807;
+  background-color: #62b5a6; /* Curtain Call */
 }
 
 #main a:link {
-  color:#56a86f;
+  color: #62b5a6; /* Happy Mint */
 }
 
 /* visited link */
 #main a:visited {
-  color: #56a86f;
+  color: #62b5a6;
 }
 
 /* mouse over link */
 #main a:hover {
-  color: #56a86f;
+  color: #e15921; /* Showgirl Orange */
 }
 
 h1,h2,h3,h4,h5,h6,legend{
-    color: #193807;
+    color: #d73f00; /* Curtain Call */
 }
 
 h1 {
@@ -39,36 +40,34 @@ body {
 }
 
 #nav-top span.glyphicon {
-  color: #193807;
+  color: #d73f00;
 }
 
 #table-of-contents header{
-    color:#193807;
-    background-color: #193807;
+    color: #fff;
+    background-color: #d73f00;
 }
 
 #table-of-contents h2{
-    background-color:#56a86f;
+    background-color: #e15921; /* Showgirl Orange */
+    color: #fff;
 }
 
-
-
 a:hover{
-    color:#193807
+    color: #d73f00;
 }
 
 a:visited{
-    color:#193807
+    color: #e15921;
 }
-
 
 #sidebar h2, postamble {
     color: #FFFFFF;
-    background-color: #193807;
+    background-color: #d73f00;
 }
 
 #sidebar a:hover {
-    background-color: #193807;
+    background-color: #e15921;
 }
 
 #sidebar a{
@@ -80,71 +79,128 @@ a:visited{
     font-size:110%;
     direction: ltr;
     text-decoration: none;
+    color: #fff;
+    background-color: #e15921;
 }
 
 #sidebar{
       max-width: 260px;
-      background-image: linear-gradient(180deg,  #193807, #7eb360)
+      background-image: linear-gradient(180deg, #d73f00, #e15921);
 }
    
-
-
 .navbar {
-    font-color:#FFFFFF ;
     color: #FFFFFF;
-    background-image: linear-gradient(120deg,  #193807, #7eb360);
+    background-image: linear-gradient(120deg, #d73f00, #e15921);
 }
 
 .navbar-default .navbar-brand {
     color: #fff;
 }
 
-.navbar-default .navbar-brand:focus,.navbar-default .navbar-brand:hover {
-    color: #7eb360;
-    background-color: transparent
+.navbar-default .navbar-brand:focus,
+.navbar-default .navbar-brand:hover {
+    color: #62b5a6; /* Happy Mint */
+    background-color: transparent;
 }
 
 .navbar-default .navbar-nav>li>a {
-    color: #193807;
-}
-
-.navbar-default .navbar-nav>li>a:focus,.navbar-default .navbar-nav>li>a:hover {
     color: #FFF;
-    background-color: #193807
 }
 
+.navbar-default .navbar-nav>li>a:focus,
+.navbar-default .navbar-nav>li>a:hover {
+    color: #FFF;
+    background-color: #e15921;
+}
 
-.dropdown-menu>li>a:focus,.dropdown-menu>li>a:hover {
-    color: #193807;
+.dropdown-menu>li>a:focus,
+.dropdown-menu>li>a:hover {
+    color: #d73f00;
     text-decoration: none;
-    background-color: #f5f5f5
+    background-color: #f5f5f5;
 }
 
-.dropdown-menu>.active>a,.dropdown-menu>.active>a:focus,.dropdown-menu>.active>a:hover {
+.dropdown-menu>.active>a,
+.dropdown-menu>.active>a:focus,
+.dropdown-menu>.active>a:hover {
     color: #fff;
     text-decoration: none;
-    background-color:#193807;
-    outline: 0
+    background-color: #e15921;
+    outline: 0;
 }
 
-.dropdown-menu>li>a:focus,.dropdown-menu>li>a:hover {
+.dropdown-menu>li>a:focus,
+.dropdown-menu>li>a:hover {
     color: #FFF;
     text-decoration: none;
-    background-color: #193807
+    background-color: #d73f00;
 }
 
 #main :not(.leaflet-control) > a {
-    background-image: linear-gradient(180deg, #193807, #8cb079);
+    background-image: linear-gradient(180deg, #e15921, #d73f00);
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-position: 0 2em;
-    color:  #7eb360;
+    color: #62b5a6; /* Happy Mint */
     font-weight: 300;
     padding: .125em 1px 0 1px;
     transition: background-position .15s, color .15s;
 }
 
 #postamble{
-  background-color:  #7eb360; ;
+  background-color: #62b5a6; /* Happy Mint */
+  border-top: #62b5a6; /* Happy Mint */
 }
 
+
+/* Sidebar nav links */
+#toc ul.nav li a {
+  background-color: #e15921;   /* Showgirl Orange (default background) */
+  color: #fff;                 /* white text */
+  border-right: solid 1px #d73f00 !important; /* Curtain Call */
+  border-radius: 8px;
+}
+
+/* Active link (clicked link) */
+#toc ul.nav li.active > a {
+  background-color: #d73f00 !important; /* Curtain Call */
+  color: #fff !important;               /* white text */
+}
+
+
+/* Hover link */
+#toc ul.nav li a:hover {
+  background-color: #62b5a6 !important; /* Happy Mint */
+  color: #d73f00 !important; 
+}
+
+/* Active submenu items */
+#toc ul.nav li.active ul li a {
+  background-color: #e15921;   /* Showgirl Orange */
+  color: #fff !important; 
+}
+
+#toc ul.nav li.active ul li.active ul li a {
+  background-color: #e15921; /* Showgirl Orange */
+  color: #fff !important; 
+}
+
+#toc ul.nav li.active ul li.active ul li a {
+    background-color: #e15921; /* Showgirl Orange */
+  color: #fff !important; 
+}
+
+#toc ul.nav li.active ul li.active a {
+      background-color: #e15921; /* Showgirl Orange */
+  color: #fff !important; 
+}
+
+#toc ul.nav li.active ul li.active ul li.active a {
+background-color: #e15921; /* Showgirl Orange */
+  color: #fff !important; 
+}
+
+#toc ul.nav li ul li a {
+  background-color: #d73f00 !important; /* Curtain Call */
+  color: #fff !important; 
+}

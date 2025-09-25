@@ -10,7 +10,7 @@ I teach methodologically focused courses using either R or Python (both have the
 I teach our math camp to incoming first-year MACSS students and to any students interested in our certificate and/or strengthening their background in quantitative methods. It's a fast-paced course. The [github repo is available here](https://github.com/jmclip/MACSS_math_camp) and I built the course off materials from Benjamin Soltoff and Justin Grimmer, among others.
 
 # Python-Based
-I teach two courses primarily based in Python: an intro to programming course and an ABM course. 
+I teach two courses primarily based in Python: an intro to programming course and an ABM course. I am also developing a course on computational approaches to music from the perspective of the social sciences. 
 
 ## Intro to Python 
 This is a course aimed at students new to programming. The Python course has been built and contributed to by many people, especially including Ann Rogers, Borja Sotomayor, and Zhao Wang. I continue to develop and interate on the material and the course materials are [available here on github](https://github.com/jmclip/macs30111). (Note: for this course, I use Canvas, so the repo is not particularly tidy!)
@@ -24,9 +24,10 @@ For more information, see the [course repo on github](https://github.com/jmclip/
 I teach two course that are primarily based in R: Computing for the Social Sciences and Data Vizualization. 
  
 ## Computing for the social sciences (CFSS) 
+This course, based on materials from Benjamin Soltoff and Sabrina Nardin, provides an introduction to R that is grounded in Social Science applications. The course [website for CFSS is available here](https://cfss-macss.netlify.app/). Students cover both basic skills in R (favoring Tidyverse over base R) and advance through static webscraping and introductory text analysis. 
 
 ## Data viz
-Data Visualization is a very fun course and covers not only the fundamentals of visualization (primarily in R) but works on three important elements: Tableau, Shiny, and creating a website. Below you can see two examples from the course in their relative platforms. 
+Data Visualization is a very fun course and covers not only the fundamentals of visualization (primarily in R) but works on three important elements: Tableau, Shiny, and creating a website. Below you can see two examples from the course in their relative platforms. The [data visualization course materials are available here](https://macs40700.netlify.app/). 
 
 ### Tableau
 
