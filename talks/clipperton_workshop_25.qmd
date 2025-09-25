@@ -1,0 +1,141 @@
+---
+title: "You can dance to this beat:"
+subtitle: "Candidates, Campaigns, and Playlists"
+author: "Jean Clipperton, University of Chicago"
+format:
+  revealjs:
+    slide-number: true 
+    theme: custom.scss
+editor: source
+---
+
+## Agenda
+
+-   Role of campaigns and elected officials
+-   Data on campaign music
+-   Content of music: emotions and themes
+-   Framework for analysis: PCA
+-   Playlist stability over time
+-   Conclusions
+
+## Background
+
+Political campaigns provide an opportunity for candidates to provide information about themselves and the representatives they will become. 
+
+<br><br>
+**Campaigns provide**
+
+* Opportunities to **signal their qualities** (delegate model (Mansbridge 2003, 2011))
+* Information about their **'brand'** (gyroscopic model (Mansbridge 2003, 2011), 'brandidate' (Kaneva 2016, Harrison 2022))
+* **Context** for voters (both informed and uninformed) (Bonilla 2022, Roumanias 2005)
+
+
+## Campagins and their tunes
+Campaign songs used for hundreds of years to connect with voters and send messages about candidates (Schoening and Kasper 2011, Peterson 2018). Technology makes it easy to curate and share playlists. 
+
+::: {.fragment} 
+
+:::{.columns} 
+::: {.column width="50%"}
+```{r echo = F, fig.show="hold", out.width="90%"}
+knitr::include_graphics("https://ichef.bbci.co.uk/news/1632/idt2/idt2/12dd9f0e-9d77-4a18-aad3-c5eb555f6120/image/816")
+```
+:::
+
+::: {.column width="50%"}
+```{r echo = F, fig.show="hold", out.width="90%"}
+knitr::include_graphics( "https://ichef.bbci.co.uk/news/1632/idt2/idt2/30f8d633-b2f7-4780-9eff-3adabcd769e9/image/816")
+```
+:::
+
+:::
+[Source: BBC](https://www.bbc.com/news/entertainment-arts-54644163)
+:::
+
+
+# Focus and Research questions
+* **Themes** within the playlist music related to candidate archetypes, for example, themes of loyalty and specific personality characteristics. 
+
+* Candidates' playlists incorporate different **emotions** and characteristics. 
+
+* Playlists will be largely **stable**, but will adjust relative to different venues and topical relevance. 
+
+## Data
+Data based on [Trax on the Trail Database](https://db.traxonthetrail.com/), focusing upon candidate-focused events (campaign launch, rally, stop, playlist, speech, town hall). Lyrics sourced from a combination of \url{genius.com} and \url{lyricsmania.com}.
+
+* Approximately 2000 songs for candidates with more than five songs on a playlist and more than five campaign-related events.
+* Approximiately 900 distinct songs represented
+* 19 unique campaigns in 2016, 2020, and 2024
+
+## Methods
+Use of three primary methods:
+
+* Topic Models (LDA (Latent Dirichlet allocation))
+* Lexicon-based text analysis (NRC Emotion Lexicon and Linguistic Inquiry Word Count (LIWC)))
+* Principal Component Analysis (PCA) of relevant terms
+
+
+## Sentiment and emotions
+
+:::{.columns}
+::: {.column width="60%"}
+```{r, echo = F, out.height= 605, out.width=575}
+knitr::include_graphics("img/sentiment_camp_nrc.png")
+```
+:::
+
+::: {.column width="40%" }
+<br><br>
+Overall, candidates from both parties incorporate songs with 'trust' as the most common emotion.
+:::
+
+:::
+
+## Topics and themes: social behavior
+
+
+
+:::{.columns}
+::: {.column width="60%"}
+```{r, echo = F, out.height= 594, out.width=550}
+knitr::include_graphics("img/liwc_front_soc.png")
+```
+:::
+
+::: {.column width="40%" .v-center}
+<br><br>
+All candidates increased the use of songs with prosocial language over the elections with Democratic candidates employing more moral language in their song choices. 
+:::
+
+:::
+
+
+## Candidate 'spaces'
+There are three distinct spaces: linguistically focused (particular language and pronouns present), emotional, and analytical or logical language. I use this to name our respective axes and dimensions. 
+
+:::{.fragment}
+```{r, echo = F, out.width= "70%"}
+knitr::include_graphics("img/pca_var.png")
+```
+:::
+
+## Candidate 'spaces'
+Distinct landscape 
+
+```{r, echo = F, out.width= "70%"}
+knitr::include_graphics("img/pca_cand.png")
+```
+
+## Candidates over time
+
+
+## Conclusions and future research
+
+* Campaign music relevant to candidates and key differences across parties and campaigns:
+  * Gender: more male-focused in Trump playlists over time
+  * Pro-social language: all candidates increased, but particularly Trump
+  * Moral language: reduction by Trump and increase by Democratic candidates
+  * Generally more negative emotion by Democratic candidates but all candidates incorporated trust
+
+## Extra slides / images
+
