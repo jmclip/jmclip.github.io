@@ -155,16 +155,23 @@ All candidates increased the use of songs with prosocial language over the elect
 
 ## Topics
 
+
+```{r, echo = F, out.height= "155%"}
+knitr::include_graphics("img/topic_table.png")
+```
+
+## Topics
+
 :::{.columns}
 ::: {.column width="60%"}
-```{r, echo = F, }
+```{r, echo = F, out.height= "65%"}
 knitr::include_graphics("img/topic_.png")
 ```
 :::
 
 ::: {.column width="40%" .v-center}
 <br><br>
-All candidates increased the use of songs with prosocial language over the elections with Democratic candidates employing more moral language in their song choices. 
+Trump has leaned toward more 'feel good'-type music while Harris had empowerment anthems. 
 :::
 
 :::

@@ -21,7 +21,7 @@ In earlier projects, I investigated how status and prestige are constructed and 
 ### Meaning and Pop music
 Building on my interests in meaning and norms, I incorporate a behavioral and cultural lens to analyze how emotional language and symbols are used in political messaging and campaigning. This line of inquiry began with a close study of music as a site of emotional meaning. My forthcoming piece in Psychology of Aesthetics, Creativity, and the Arts examines the emotional language in Taylor Swift’s discography and its evolution over eras. I identify patterns in how artists use cultural and emotional signals to build narrative, identity, and connection. I am expanding upon these findings in a broader project on how pop music encodes emotional meaning. This expansion has implications for how political candidates strategically draw on the emotional and cultural meanings embedded in popular music to shape their public image, build political brands, and signal values to voters.
 
-### Methodoligcal focus
+### Methodological focus
 I incorporate web scraping, natural language processing, and machine learning to analyze large-scale text and audio data. My interdisciplinary approach applies computational methods to classic political science questions—how identity is constructed, how elites communicate, and how meaning drives political behavior across cultural and institutional settings.
 
 ## Teaching
