@@ -29,8 +29,21 @@ Political campaigns provide an opportunity for candidates to provide information
 * Information about their **'brand'** (gyroscopic model (Mansbridge 2003, 2011), 'brandidate' (Kaneva 2016, Harrison 2022))
 * **Context** for voters (both informed and uninformed) (Bonilla 2022, Roumanias 2005)
 
+## Theory: models of representatives
 
-## Campagins and their tunes
+* **Delegate** models center on the notion of a representative as an agent on behalf of their constituents
+  * Collective-focused
+  * 'We' over 'I'
+  * Principled: what is 'right' from an ethical or moral perspective
+
+* **Brand** model (Mansbridge's gyroscopic model) is centered upon the representative as the commodity 
+  * Self-focused
+  * 'I' over 'we'
+  * Determines what is 'right' from own perspective
+  * Typically resolute
+  
+
+## Context: Campaign music 
 Campaign songs used for hundreds of years to connect with voters and send messages about candidates (Schoening and Kasper 2011, Peterson 2018). Technology makes it easy to curate and share playlists. 
 
 ::: {.fragment} 
@@ -53,12 +66,21 @@ knitr::include_graphics( "https://ichef.bbci.co.uk/news/1632/idt2/idt2/30f8d633-
 :::
 
 
-# Focus and Research questions
+# Focus and research questions
 * **Themes** within the playlist music related to candidate archetypes, for example, themes of loyalty and specific personality characteristics. 
 
-* Candidates' playlists incorporate different **emotions** and characteristics. 
+* Candidates' playlists incorporate different **emotions** and characteristics, with a focus on trust
 
-* Playlists will be largely **stable**, but will adjust relative to different venues and topical relevance. 
+* Different models of representation borne out in types of songs chosen:
+  * **Delegate** models center on the notion of a representative as an agent on behalf of their constituents
+    * 'We' over 'I'
+    * Morality-focused
+  
+  * **Brand** model (Mansbridge's gyroscopic model) is centered upon the representative as the commodity 
+    * 'I' over 'we'
+    * 'Signature' elements, such as songs
+
+
 
 ## Data
 Data based on [Trax on the Trail Database](https://db.traxonthetrail.com/), focusing upon candidate-focused events (campaign launch, rally, stop, playlist, speech, town hall). Lyrics sourced from a combination of \url{genius.com} and \url{lyricsmania.com}.
@@ -75,25 +97,47 @@ Use of three primary methods:
 * Principal Component Analysis (PCA) of relevant terms
 
 
-## Sentiment and emotions
+## Sentiment and emotions: NRC
 
+Using the NRC emotion lexicon, I incorporate eight emotions:
+
+* Disgust
+* Anger
+* Fear
+* Sadness
+* Trust
+* Anticipation
+* Surprise
+* Joy
+
+## Sentiment and emotions
 :::{.columns}
-::: {.column width="60%"}
+::: {.column width="70%"}
 ```{r, echo = F, out.height= 605, out.width=575}
 knitr::include_graphics("img/sentiment_camp_nrc.png")
 ```
 :::
 
-::: {.column width="40%" }
+::: {.column width="30%" }
 <br><br>
 Overall, candidates from both parties incorporate songs with 'trust' as the most common emotion.
 :::
 
 :::
 
+
+
+## Language and themes: LIWC
+**Linguistic Inquiry Word Count (LIWC)** incorporates measures of linguistic use, which I use for its indicators of the following:
+
+* **Linguistic terms:** 
+    * pronoun use, such as I, we, she/he, and they
+* **Analytic language:** use of logical language, including causal language 
+* **Social terminology:** 
+  * including prosocial language, moral language, and conflict
+  * gendered terms/social references: male vs female
+
 ## Topics and themes: social behavior
-
-
 
 :::{.columns}
 ::: {.column width="60%"}
@@ -109,6 +153,21 @@ All candidates increased the use of songs with prosocial language over the elect
 
 :::
 
+## Topics
+
+:::{.columns}
+::: {.column width="60%"}
+```{r, echo = F, }
+knitr::include_graphics("img/topic_.png")
+```
+:::
+
+::: {.column width="40%" .v-center}
+<br><br>
+All candidates increased the use of songs with prosocial language over the elections with Democratic candidates employing more moral language in their song choices. 
+:::
+
+:::
 
 ## Candidate 'spaces'
 There are three distinct spaces: linguistically focused (particular language and pronouns present), emotional, and analytical or logical language. I use this to name our respective axes and dimensions. 
@@ -126,7 +185,6 @@ Distinct landscape
 knitr::include_graphics("img/pca_cand.png")
 ```
 
-## Candidates over time
 
 
 ## Conclusions and future research
