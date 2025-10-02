@@ -1,5 +1,5 @@
 ---
-title: "You can dance to this beat:"
+title: "It's a new soundtrack:"
 subtitle: "Candidates, Campaigns, and Playlists"
 author: "Jean Clipperton, University of Chicago"
 format:
@@ -22,7 +22,7 @@ editor: source
 
 Political campaigns provide an opportunity for candidates to provide information about themselves and the representatives they will become. 
 
-<br><br>
+<br> 
 **Campaigns provide**
 
 * Opportunities to **signal their qualities** (delegate model (Mansbridge 2003, 2011))
@@ -35,13 +35,15 @@ Political campaigns provide an opportunity for candidates to provide information
   * Collective-focused
   * 'We' over 'I'
   * Principled: what is 'right' from an ethical or moral perspective
-
+  
+:::{.fragment}
 * **Brand** model (Mansbridge's gyroscopic model) is centered upon the representative as the commodity 
   * Self-focused
   * 'I' over 'we'
   * Determines what is 'right' from own perspective
   * Typically resolute
-  
+
+:::
 
 ## Context: Campaign music 
 Campaign songs used for hundreds of years to connect with voters and send messages about candidates (Schoening and Kasper 2011, Peterson 2018). Technology makes it easy to curate and share playlists. 
@@ -66,19 +68,30 @@ knitr::include_graphics( "https://ichef.bbci.co.uk/news/1632/idt2/idt2/30f8d633-
 :::
 
 
-# Focus and research questions
+# Focus and expectations
+::: {.fragment}
 * **Themes** within the playlist music related to candidate archetypes, for example, themes of loyalty and specific personality characteristics. 
+:::
 
-* Candidates' playlists incorporate different **emotions** and characteristics, with a focus on trust
+::: {.fragment}
+* Candidates' playlists incorporate different **emotions** and characteristics, with a focus on **trust**
 
+:::
+
+# Theory
+::: {.fragment}
 * Different models of representation borne out in types of songs chosen:
-  * **Delegate** models center on the notion of a representative as an agent on behalf of their constituents
+  * **Delegate** models center on the notion of a representative as an agent on behalf of their constituents  
     * 'We' over 'I'
     * Morality-focused
+
+:::
   
-  * **Brand** model (Mansbridge's gyroscopic model) is centered upon the representative as the commodity 
+::: {.fragment}
+  * **Brand** model (Mansbridge's gyroscopic model) is centered upon the representative as the commodity {.fragment}
     * 'I' over 'we'
     * 'Signature' elements, such as songs
+:::
 
 
 
@@ -92,11 +105,24 @@ Data based on [Trax on the Trail Database](https://db.traxonthetrail.com/), focu
 ## Methods
 Use of three primary methods:
 
-* Topic Models (LDA (Latent Dirichlet allocation))
 * Lexicon-based text analysis (NRC Emotion Lexicon and Linguistic Inquiry Word Count (LIWC)))
+* Topic Models (LDA (Latent Dirichlet allocation))
 * Principal Component Analysis (PCA) of relevant terms
 
 
+## NRC Emotion Lexicon
+
+* The NRC emotion lexicon is a dictionary-based approach to text analysis. 
+
+* Lists of words and their associated emotion 
+  * Example: 'cheerful' is coded as a joyful word while 'idiotic' is an angry word
+
+<br>
+
+### NRC use
+Songs have tallies for each emotion and these are aggregated by candidate in the analysis
+
+  
 ## Sentiment and emotions: NRC
 
 Using the NRC emotion lexicon, I incorporate eight emotions:
@@ -110,20 +136,21 @@ Using the NRC emotion lexicon, I incorporate eight emotions:
 * Surprise
 * Joy
 
-## Sentiment and emotions
-:::{.columns}
-::: {.column width="70%"}
-```{r, echo = F, out.height= 605, out.width=575}
-knitr::include_graphics("img/sentiment_camp_nrc.png")
+
+## Sentiment and emotions: Overall
+
+```{r, echo = F,}
+knitr::include_graphics("img/ts_sentiment_overall.png")
 ```
-:::
 
-::: {.column width="30%" }
-<br><br>
-Overall, candidates from both parties incorporate songs with 'trust' as the most common emotion.
-:::
 
-:::
+## Sentiment and emotions: by candidate
+Overall, candidates from **both parties incorporate songs with 'trust'** as the most common emotion.
+
+```{r, echo = F, }
+knitr::include_graphics("img/sentiment_camp_nrc_front.png")
+```
+
 
 
 
@@ -137,34 +164,42 @@ Overall, candidates from both parties incorporate songs with 'trust' as the most
   * including prosocial language, moral language, and conflict
   * gendered terms/social references: male vs female
 
-## Topics and themes: social behavior
+## Themes: social behavior
 
 :::{.columns}
 ::: {.column width="60%"}
-```{r, echo = F, out.height= 594, out.width=550}
+```{r, echo = F,}
 knitr::include_graphics("img/liwc_front_soc.png")
 ```
 :::
 
 ::: {.column width="40%" .v-center}
 <br><br>
-All candidates increased the use of songs with prosocial language over the elections with Democratic candidates employing more moral language in their song choices. 
+
+All candidates increased the use of songs with prosocial language over the elections with **Democratic candidates employing more moral language** in their song choices and Trump **nearly doubling** the ratio of prosocial language in playlists. 
 :::
 
 :::
+
+## Topics: approach
+
+* Incorporated a topic model on the lyrics from all campaign songs. 
+
+* Set topic numbers from 1 to 20 to find the best number of topics, incorporating two measures from CaoJuan2009 and Deveaud2014.
+
+* Latent Dirichlet Allocation model: model maps documents to fixed number of topics (five for this setup)
+
 
 ## Topics
-
-
-```{r, echo = F, out.height= "155%"}
-knitr::include_graphics("img/topic_table.png")
+```{r, results='asis'}
+cat(readLines("img/topic_table.html"), sep="\n")
 ```
 
 ## Topics
 
 :::{.columns}
 ::: {.column width="60%"}
-```{r, echo = F, out.height= "65%"}
+```{r, echo = F, }
 knitr::include_graphics("img/topic_.png")
 ```
 :::
@@ -176,31 +211,62 @@ Trump has leaned toward more 'feel good'-type music while Harris had empowerment
 
 :::
 
-## Candidate 'spaces'
-There are three distinct spaces: linguistically focused (particular language and pronouns present), emotional, and analytical or logical language. I use this to name our respective axes and dimensions. 
+## Principal Component Analysis (PCA): explanation
 
+* Principal Component Analysis offers a way to preserve the variation in the underlying data while reducing the number of variables present. 
+
+* Variables are reduced through identifying relevant dimensions and collecting variables together. 
+
+* Researchers name the dimensions thematically based on the variables present within the dimensional space
+
+
+
+## PCA: Candidate 'spaces'
+:::{.columns}
+:::{.column width="80%"}
 :::{.fragment}
-```{r, echo = F, out.width= "70%"}
+```{r, echo = F, out.width= "95%"}
 knitr::include_graphics("img/pca_var.png")
 ```
 :::
+:::
+
+:::{.column width="20%"}
+:::{.fragment}
+<br><br>
+There are three distinct spaces: 
+
+1. Linguistically focused (particular language and pronouns present)
+
+2. Emotional
+
+3. Analytical or logical language
+:::
+:::
+
+:::
+
+
 
 ## Candidate 'spaces'
-Distinct landscape 
+Distinct landscape: Trump and Sanders and Years of Harris
 
 ```{r, echo = F, out.width= "70%"}
 knitr::include_graphics("img/pca_cand.png")
 ```
 
+## Overlapping songs{data-background-color="white"}
 
+
+```{r, echo = F, out.height= 620, out.width=850}
+knitr::include_graphics("img/network_songs.png")
+```
 
 ## Conclusions and future research
 
 * Campaign music relevant to candidates and key differences across parties and campaigns:
-  * Gender: more male-focused in Trump playlists over time
   * Pro-social language: all candidates increased, but particularly Trump
   * Moral language: reduction by Trump and increase by Democratic candidates
   * Generally more negative emotion by Democratic candidates but all candidates incorporated trust
 
-## Extra slides / images
 
