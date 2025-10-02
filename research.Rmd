@@ -34,10 +34,11 @@ This project explores how fandom creates self-reinforcing structures. I scrape f
 This project is a collaboration on ABM design from a perspective of better means to evaluate the model's success. We use machine learning to predict effective parameter combinations for more productive sweeps. 
 
 # Publications
- Alter, K., Clipperton, J., Schraudenbach, E., & Rozier, L. (2020). Gender and Status in American Political Science: Who Determines Whether a Scholar Is Noteworthy? Perspectives on Politics, 18(4), 1048-1067. doi:10.1017/S1537592719004985
+* Clipperton, Jean, and Loizos Bitsikokos. 2025. “You Do Not Get to Tell Me about Sad: Swiftian Saudade in Taylor Swift’s Lyrics.” Psychology of Aesthetics, Creativity, and the Arts. doi:10.1037/aca0000810. [preprint/online first pdf available here](papers/PACA_clipperton_swiftian_saudade.pdf)
+* Alter, K., Clipperton, J., Schraudenbach, E., & Rozier, L. (2020). Gender and Status in American Political Science: Who Determines Whether a Scholar Is Noteworthy? Perspectives on Politics, 18(4), 1048-1067. doi:10.1017/S1537592719004985
  
 # Talks
-* [MACSS Computational Social Science Workshop](talks/clipperton_workshop_25.html), University of Chicago, Fall 2025
+*  Clipperton, Jean. 2025. ["It's a new soundtrack: political candidates, campaigns, and playlists"](talks/clipperton_workshop_25.html) MACSS Computational Social Science Workshop, University of Chicago, Fall 2025
 * Simpson College, Fall 2025
 
 ## Non Peer-Reviewed Publications
@@ -56,6 +57,7 @@ https://digitallearning.northwestern.edu/article/2019/04/23/alternative-final-as
 
 
 # Working Papers
+* Clipperton, Jean. 2025. "It's a new soundtrack: political candidates, campaigns, and playlists"
 * Clipperton, Jean, Josue Franco, Shane Nordyke, Melissa Shaffer O’Connell, Frederick Wood. 2020. “SOTL Research Design for Assessment of Interventions.” APSA Preprints. doi:10.33774/apsa-2020-gwfl0.
 
 
