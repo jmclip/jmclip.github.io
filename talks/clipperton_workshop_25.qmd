@@ -223,14 +223,6 @@ Trump has leaned toward more 'feel good'-type music while Harris had empowerment
 
 ## PCA: Candidate 'spaces'
 :::{.columns}
-:::{.column width="80%"}
-:::{.fragment}
-```{r, echo = F, out.width= "95%"}
-knitr::include_graphics("img/pca_var.png")
-```
-:::
-:::
-
 :::{.column width="20%"}
 :::{.fragment}
 <br><br>
@@ -243,6 +235,15 @@ There are three distinct spaces:
 3. Analytical or logical language
 :::
 :::
+:::{.column width="80%"}
+:::{.fragment}
+```{r, echo = F, out.width= "95%"}
+knitr::include_graphics("img/pca_var.png")
+```
+:::
+:::
+
+
 
 :::
 
