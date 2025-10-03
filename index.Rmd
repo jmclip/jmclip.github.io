@@ -11,7 +11,9 @@ I am an [Associate Director of MACSS and Associate Senior Instructional Professo
 
 ## Research
 
-My research focuses upon how we make meaning in the world, typically through institutions (formal and informal). To learn more about my projects, see [my research linked in the upper right corner](research.html).
+My research focuses upon how we make meaning in the world, typically through institutions (formal and informal). To learn more about my projects, see [my research linked in the upper right corner](research.html). 
+
+If you're looking for my thoughts on the newest Taylor Swift album, [look no further!](showgirl_comparison.html)
 
 
 My career in political science began with an interest in what Douglass North calls ‘the rules of the game’ and this continues to drive my research focus. I pursue this through three ongoing projects, each providing a different perspective on the construction of meaning and identity. One explores how artists use language and sound to communicate emotion and meaning, offering insight into the cultural conventions that shape public expression. A second examines how political candidates use music, including in playlists and at events, to cultivate their image, communicate with voters, and build political brands. A third considers fandoms, specifically those connected to artists, as institutional communities that facilitate collective identity, enforce norms, and shape patterns of affiliation and engagement in the digital public sphere. Across all my projects, I examine how shared meaning shapes political belonging, identity, and expression.
@@ -19,7 +21,10 @@ My career in political science began with an interest in what Douglass North cal
 In earlier projects, I investigated how status and prestige are constructed and operate within the discipline of political science (Alter et al. 2020, Perspectives on Politics), and how institutional legacies shape the implementation of EU law. 
 
 ### Meaning and Pop music
-Building on my interests in meaning and norms, I incorporate a behavioral and cultural lens to analyze how emotional language and symbols are used in political messaging and campaigning. This line of inquiry began with a close study of music as a site of emotional meaning. My forthcoming piece in Psychology of Aesthetics, Creativity, and the Arts examines the emotional language in Taylor Swift’s discography and its evolution over eras. I identify patterns in how artists use cultural and emotional signals to build narrative, identity, and connection. I am expanding upon these findings in a broader project on how pop music encodes emotional meaning. This expansion has implications for how political candidates strategically draw on the emotional and cultural meanings embedded in popular music to shape their public image, build political brands, and signal values to voters.
+Building on my interests in meaning and norms, I incorporate a behavioral and cultural lens to analyze how emotional language and symbols are used in political messaging and campaigning. This line of inquiry began with a close study of music as a site of emotional meaning. My forthcoming piece in Psychology of Aesthetics, Creativity, and the Arts examines the emotional language in Taylor Swift’s discography and its evolution over eras. I identify patterns in how artists use cultural and emotional signals to build narrative, identity, and connection. I am expanding upon these findings in a broader project on how pop music encodes emotional meaning. This expansion has implications for how political candidates strategically draw on the emotional and cultural meanings embedded in popular music to shape their public image, build political brands, and signal values to voters. 
+
+#### Political Candidates and their Campaigns
+My most recent project explores political candidates, the songs they use at their events, and the themes and messaging present within the songs. This project is currently underway: preliminary results indicate similarities among parties, with Trump using a lot of 'I'-focused songs while Democratic candidates incorporate songs with 'we' language. 
 
 ### Methodological focus
 I incorporate web scraping, natural language processing, and machine learning to analyze large-scale text and audio data. My interdisciplinary approach applies computational methods to classic political science questions—how identity is constructed, how elites communicate, and how meaning drives political behavior across cultural and institutional settings.
