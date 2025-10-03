@@ -24,7 +24,7 @@ knitr::include_graphics("img/ts_pca.png")
 
 In it, we track the development of Swift as an artist, finding that her work incorporates a juxtaposition of contrasting emotions in what we term 'Swiftian Saudade.' Her work evolves from a more positive and lyrically focused space to one full of darker emotions. 
 
-If you're looking for my thoughts on the newest Taylor Swift album, [look no further!](showgirl_comparison.html)
+### If you're looking for my thoughts on the newest Taylor Swift album, [look no further!](showgirl_comparison.html)
 
 Our follow-up project expands beyond one artist to look more generally at pop music. 
 
