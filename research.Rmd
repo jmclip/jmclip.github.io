@@ -3,7 +3,7 @@ title: "Research Interests"
 output: html_document
 ---
 
-I'm an institutionalist at heart and most of the substance of my work explores how we create rules and meaning for ourselves. Methodologically, I am a computational social scientist interested in contributing to methodological approaches, such as text analysis and agent-based modeling. 
+I'm an institutionalist at heart and most of the substance of my work explores how we create rules and meaning for ourselves. Methodologically, I am a computational social scientist interested in contributing to methodological approaches, such as text analysis and agent-based modeling. [See my CV here.](papers/Clipperton_CV_2025.pdf)
 
 # Ongoing projects
 I have four main projects in process right now -- all generally computational in nature, mostly focused upon how we make meaning. The third project, on ABMs, is a methodological project exploring how to maximize outcomes. 
