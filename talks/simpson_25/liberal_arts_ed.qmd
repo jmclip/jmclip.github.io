@@ -1,0 +1,302 @@
+---
+title: "Why interdisciplinary studies are essential to the liberal arts"
+subtitle: "cultivated curiosity and the liberal arts education"
+author: "Jean Clipperton, University of Chicago"
+format:
+  revealjs:
+    slide-number: true 
+    theme: custom.scss
+editor: source
+---
+
+# Thesis up front:
+Developing a sense of cultivated curiosity through an interdisciplinary liberal arts education can equip you to succeed in the classroom and beyond (students AND faculty!!!)
+
+# Agenda
+
+* My Simpson journey
+* Liberal arts and my research
+* Building on your foundation
+
+ 
+
+:::: {.middle .center .inverse}
+
+# About me
+
+::::
+
+ 
+
+## My Simpson journey
+
+* 'Recruited' as math major (actually had my deposit in elsewhere!)
+* Liked the small college environment (smaller than my highschool!)
+* Knew I wanted to study abroad (Nicaragua!)
+
+ ![](../img/nica.JPG)
+
+## First classes
+
+* Honors Liberal Arts Seminar in Philosophy
+* Math: calculus
+* Spanish
+
+![](../img/tara.JPG)
+
+ 
+
+## Zero chill but lots of fun
+
+* Involved across campus
+* Yearbook and newspaper
+* Coffee shops
+* Greek life
+* Math modeling competition 
+
+![](../img/math.JPG)
+
+ 
+
+
+
+## Academic journey
+Study abroad and math modeling competitions changed my life ... because I had a wide foundation to draw from
+
+![](https://www.comap.com/templates/yootheme/cache/e9/2026_MCM-ICM_Flyer_LG-e9bd207e.webp)
+
+
+ 
+# Graduate school: 
+ 
+* Pursued a PhD in Political Science
+* University of Michigan for Complex Systems
+* Knew I loved teaching
+
+![](../img/grad.JPG)
+
+# Personal and Professional life
+
+
+* My work spans disciplines naturally—I collaborate with diverse colleagues and draw on multiple areas of training:
+  * Philosophy: analytical thinking and argument construction
+  * Mathematics: rigorous problem-solving
+  * Computer Science: computational implementation
+  * Political Science: synthesis of complex literatures
+  * Sociology: navigating cross-cultural and interpersonal dynamics
+
+## Small aside: An ongoing battle with a school district
+
+* A district that is looking at numbers but not the bigger picture
+* Lit reviews, collaborative teamwork, analysis, AND SO MUCH MORE!
+* [Legion of Nerds: a group of parents fighting back with data](https://d65-legionofnerds.github.io/)
+
+![](https://d65-legionofnerds.github.io/assets/logo_transparent.png)
+
+
+## Professional life: Music research
+
+Political campaigns provide an opportunity for candidates to provide information about themselves and the representatives they will become. 
+
+
+### Research project: It's a new soundtrack:Candidates, Campaigns, and Playlists
+
+<br> 
+**Campaigns provide**
+
+* Opportunities to **signal their qualities** (delegate model (Mansbridge 2003, 2011))
+* Information about their **'brand'** (gyroscopic model (Mansbridge 2003, 2011), 'brandidate' (Kaneva 2016, Harrison 2022))
+* **Context** for voters (both informed and uninformed) (Bonilla 2022, Roumanias 2005)
+
+## Theory: models of representatives
+
+* **Delegate** models center on the notion of a representative as an agent on behalf of their constituents
+  * Collective-focused
+  * 'We' over 'I'
+  * Principled: what is 'right' from an ethical or moral perspective
+  
+:::{.fragment}
+* **Brand** model (Mansbridge's gyroscopic model) is centered upon the representative as the commodity 
+  * Self-focused
+  * 'I' over 'we'
+  * Determines what is 'right' from own perspective
+  * Typically resolute
+
+:::
+
+## Context: Campaign music 
+Campaign songs used for hundreds of years to connect with voters and send messages about candidates (Schoening and Kasper 2011, Peterson 2018). Technology makes it easy to curate and share playlists. 
+
+::: {.fragment} 
+
+:::{.columns} 
+::: {.column width="50%"}
+```{r echo = F, fig.show="hold", out.width="90%"}
+knitr::include_graphics("https://ichef.bbci.co.uk/news/1632/idt2/idt2/12dd9f0e-9d77-4a18-aad3-c5eb555f6120/image/816")
+```
+:::
+
+::: {.column width="50%"}
+```{r echo = F, fig.show="hold", out.width="90%"}
+knitr::include_graphics( "https://ichef.bbci.co.uk/news/1632/idt2/idt2/30f8d633-b2f7-4780-9eff-3adabcd769e9/image/816")
+```
+:::
+
+:::
+[Source: BBC](https://www.bbc.com/news/entertainment-arts-54644163)
+:::
+
+## Data
+Data based on [Trax on the Trail Database](https://db.traxonthetrail.com/), focusing upon candidate-focused events (campaign launch, rally, stop, playlist, speech, town hall). Lyrics sourced from a combination of \url{genius.com} and \url{lyricsmania.com}.
+
+* Approximately 2000 songs for candidates with more than five songs on a playlist and more than five campaign-related events.
+* Approximiately 900 distinct songs represented
+* 19 unique campaigns in 2016, 2020, and 2024
+
+## Methods
+Use of three primary methods:
+
+* Lexicon-based text analysis (NRC Emotion Lexicon and Linguistic Inquiry Word Count (LIWC)))
+* Topic Models (LDA (Latent Dirichlet allocation))
+* Principal Component Analysis (PCA) of relevant terms
+
+
+## Themes: social behavior
+
+:::{.columns}
+::: {.column width="60%"}
+```{r, echo = F,}
+knitr::include_graphics("../img/liwc_front_soc.png")
+```
+:::
+
+::: {.column width="40%" .v-center}
+<br><br>
+
+All candidates increased the use of songs with prosocial language over the elections with **Democratic candidates employing more moral language** in their song choices and Trump **nearly doubling** the ratio of prosocial language in playlists. 
+:::
+
+:::
+
+## Topics
+```{r, results='asis'}
+cat(readLines("../img/topic_table.html"), sep="\n")
+```
+
+## Topics
+
+:::{.columns}
+::: {.column width="60%"}
+```{r, echo = F, }
+knitr::include_graphics("../img/topic_.png")
+```
+:::
+
+::: {.column width="40%" .v-center}
+<br><br>
+Trump has leaned toward more 'feel good'-type music while Harris had empowerment anthems. 
+:::
+
+:::
+
+## Principal Component Analysis (PCA): explanation
+
+* Principal Component Analysis offers a way to preserve the variation in the underlying data while reducing the number of variables present. 
+
+* Variables are reduced through identifying relevant dimensions and collecting variables together. 
+
+* Researchers name the dimensions thematically based on the variables present within the dimensional space
+
+
+
+## PCA: Candidate 'spaces'
+:::{.columns}
+:::{.column width="20%"}
+:::{.fragment}
+<br><br>
+There are three distinct spaces: 
+
+1. Linguistically focused (particular language and pronouns present)
+
+2. Emotional
+
+3. Analytical or logical language
+:::
+:::
+:::{.column width="80%"}
+:::{.fragment}
+```{r, echo = F, out.width= "95%"}
+knitr::include_graphics("../img/pca_var.png")
+```
+:::
+:::
+
+
+
+:::
+
+
+
+## Candidate 'spaces'
+Distinct landscape: Trump and Sanders and Years of Harris
+
+```{r, echo = F, out.width= "70%"}
+knitr::include_graphics("../img/pca_cand.png")
+```
+
+## Overlapping songs{data-background-color="white"}
+
+
+```{r, echo = F, out.height= 620, out.width=850}
+knitr::include_graphics("../img/network_songs.png")
+```
+
+:::: {.middle .center .inverse}
+
+# So WHAT????
+
+::::
+
+ 
+
+## Why bother with all this?
+
+* Problem solving skills
+* 
+
+ 
+
+:::: {.middle .center .inverse}
+
+# Takeaways
+
+::::
+
+
+## PROFESSORS
+
+* Bring in real-world context whenever you can!
+* Teach cultivated curiosity ... and how to think about questions and answers
+* Encourage and bring in different viewpoints
+
+### What does this look like in the classroom? 
+
+* Problem-solving classes
+* Interdisciplinary teams
+* Student autonomy and choice in assignments
+
+## STUDENTS!
+
+* INQUIRY: what are you interested in? what can you learn about it?
+* CULTIVATE your curiosity: approach questions from different perspectives
+* FIND something that interests you: LIFE IS FOR LIVING and it's ok to do something for fun
+  * Music class w/Prof Albrecht and how major chords are coming home
+
+
+
+
+
+# Thank you!
+
+clipperton@uchicago.edu
+

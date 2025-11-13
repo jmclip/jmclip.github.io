@@ -55,3 +55,18 @@ b, strong {
   font-size: 1.1em; 
 }
 
+.middle {
+  /* Set vertical alignment for the content */
+  align-items: center;
+}
+
+.center {
+  /* Set horizontal alignment for the content */
+  text-align: center;
+}
+
+.inverse {
+  /* Change the color scheme for this slide */
+  background-color: black;
+  color: white;
+}

@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Rubik:wght@400;500;600&display=swap');
+
+/*-- scss:defaults --*/
+$font-family-sans-serif: 'Rubik', -apple-system, sans-serif;
+$presentation-heading-font: 'Montserrat', -apple-system, sans-serif;
+$body-bg: #f5f5f0;  // Light warm gray background
+$body-color: #2c2c2c;  // Dark gray for text
+$link-color: #800000;  // Deep red for links
+$text-muted: #6c757d;  // Muted gray
+
+/*-- scss:rules --*/
+.reveal .slide blockquote {
+  border-left: 3px solid $link-color;
+  padding-left: 0.5em;
+  color: #4a4a4a;
+}
+
+/* Make first-slide subtitle larger */
+.reveal section:first-of-type p.subtitle {
+  font-size: 2em !important;
+  color: #800000 !important;  // Deep red subtitle
+  font-style: italic !important;
+  margin-top: 0.5em !important;
+}
+
+/* Base text size for everything */
+body, .reveal {
+  font-size: 2.5rem;
+  font-weight: 500;  // Medium weight for better readability
+}
+
+/* Apply heading font to all headings */
+.reveal h1, .reveal h2, .reveal h3, 
+.reveal h4, .reveal h5, .reveal h6 {
+  font-family: $presentation-heading-font;
+  font-weight: 700;
+}
+
+/* Headings inside slides */
+.reveal section h1 {
+  font-size: 2.5em;
+  color: #800000;  // Deep red for main headings
+}
+
+.reveal section h2 {
+  font-size: 2em;
+  color: #a52a2a;  // Slightly lighter red for h2
+}
+
+.reveal section h3 {
+  font-size: 1.5em;
+  color: #2c2c2c;
+}
+
+.reveal section h4 {
+  font-size: 1.5em;
+  color: #2c2c2c;
+}
+
+.reveal section h5 {
+  font-size: 1.5em;
+  color: #2c2c2c;
+}
+
+.reveal section h6 {
+  font-size: 1.5em;
+  color: #2c2c2c;
+}
+
+b, strong {
+  font-size: 1.1em;
+  color: #800000;  // Deep red for emphasis
+  font-weight: 600;  // Bolder weight for emphasis
+}
+
+.middle {
+  align-items: center;
+}
+
+.center {
+  text-align: center;
+}
+
+/* Inverse slide - targets the entire slide section */
+.reveal section.inverse {
+  background-color: #800000 !important;  // Deep red background fills entire slide
+  color: #e8e8e8 !important;  // Light gray text
+}
+
+/* Override heading colors on inverse slides */
+.reveal section.inverse h1,
+.reveal section.inverse h2,
+.reveal section.inverse h3,
+.reveal section.inverse h4,
+.reveal section.inverse h5,
+.reveal section.inverse h6 {
+  color: #f5f5f0 !important;  // Light color for headings on dark background
+}
+
+/* Override strong/bold on inverse slides */
+.reveal section.inverse b,
+.reveal section.inverse strong {
+  color: #ffd700 !important;  // Gold for emphasis on dark background
+}
+
+/* Override links on inverse slides */
+.reveal section.inverse a {
+  color: #ffcccb !important;  // Light red/pink for links
+}
