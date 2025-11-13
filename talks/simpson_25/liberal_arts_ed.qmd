@@ -262,7 +262,9 @@ knitr::include_graphics("../img/network_songs.png")
 ## Why bother with all this?
 
 * Problem solving skills
-* 
+* Better insights
+* Cooler at parties / work
+* Able to move ahead because you can be a go-between
 
  
 

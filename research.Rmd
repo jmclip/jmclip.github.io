@@ -41,7 +41,7 @@ This project is a collaboration on ABM design from a perspective of better means
  
 # Talks
 *  Clipperton, Jean. 2025. ["It's a new soundtrack: political candidates, campaigns, and playlists"](talks/clipperton_workshop_25.html) MACSS Computational Social Science Workshop, University of Chicago, Fall 2025
-* Simpson College, Fall 2025
+* Simpson College, ["cultivated curiosity and the liberal arts education"](talks/simpson_25/liberal_arts_ed.html) Fall 2025
 
 ## Non Peer-Reviewed Publications
 *	Clipperton, et al. Empirical Methods in Political Science: An Introduction Summer 2019
