@@ -99,7 +99,7 @@ Study abroad and math modeling competitions changed my life ... because I had a 
 Political campaigns provide an opportunity for candidates to provide information about themselves and the representatives they will become. 
 
 
-### Research project: It's a new soundtrack:Candidates, Campaigns, and Playlists
+### Research project: It's a new soundtrack: Candidates, Campaigns, and Playlists
 
 <br> 
 **Campaigns provide**
@@ -306,4 +306,6 @@ knitr::include_graphics("../img/network_songs.png")
 # Thank you!
 
 clipperton@uchicago.edu
+
+![](../../img/cute_betty.jpg)
 
