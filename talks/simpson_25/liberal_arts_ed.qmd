@@ -30,8 +30,8 @@ Developing a sense of cultivated curiosity through an interdisciplinary liberal 
 
 ## My Simpson journey
 
-* 'Recruited' as math major (actually had my deposit in elsewhere!)
-* Liked the small college environment (smaller than my highschool!)
+* 'Recruited' as math major (actually had my deposit in elsewhere)
+* Liked the small college environment (smaller than my highschool)
 * Knew I wanted to study abroad (Nicaragua!)
 
  ![](../img/nica.JPG)
@@ -42,6 +42,8 @@ Developing a sense of cultivated curiosity through an interdisciplinary liberal 
 * Math: calculus
 * Spanish
 
+### Ultimately was a Math, Philosophy, and Spanish major with a Latin American Studies minor
+
 ![](../img/tara.JPG)
 
  
@@ -50,8 +52,10 @@ Developing a sense of cultivated curiosity through an interdisciplinary liberal 
 
 * Involved across campus
 * Yearbook and newspaper
-* Coffee shops
+* Coffee shop
+* Tutor + 'TA'
 * Greek life
+* Math club
 * Math modeling competition 
 
 ![](../img/math.JPG)
@@ -78,12 +82,13 @@ Study abroad and math modeling competitions changed my life ... because I had a 
 # Personal and Professional life
 
 
-* My work spans disciplines naturally—I collaborate with diverse colleagues and draw on multiple areas of training:
-  * Philosophy: analytical thinking and argument construction
-  * Mathematics: rigorous problem-solving
-  * Computer Science: computational implementation
-  * Political Science: synthesis of complex literatures
-  * Sociology: navigating cross-cultural and interpersonal dynamics
+* My work spans multiple disciplines—I collaborate with diverse colleagues and draw on different areas of training:
+  * **Philosophy**: analytical thinking and argument construction
+  * **Mathematics**: rigorous problem-solving
+  * **Computer Science**: computational implementation
+  * **Political Science**: synthesis of complex literatures, institutional analysis
+  * **Sociology**: navigating cross-cultural and interpersonal dynamics
+  * **Psychology**: construction of meaning and understanding, framing
 
 ## Small aside: An ongoing battle with a school district
 
@@ -142,6 +147,9 @@ knitr::include_graphics( "https://ichef.bbci.co.uk/news/1632/idt2/idt2/30f8d633-
 :::
 
 :::
+
+:::
+
 [Source: BBC](https://www.bbc.com/news/entertainment-arts-54644163)
 
 ## Data
@@ -272,6 +280,16 @@ knitr::include_graphics("../img/network_songs.png")
 
 ::::
 
+## STUDENTS!
+
+* INQUIRY: what are you interested in? what can you learn about it?
+* CULTIVATE your curiosity: approach questions from different perspectives
+* FIND something that interests you: LIFE IS FOR LIVING and it's ok to do something for fun
+  * Problem solving class w/Murphy Waggoner to think about how to bring what we know into the world
+  * Philosophy of Language class w/John Pauley (and Prof Lieberman) on how we shape meaning and understanding
+  * Music class w/Prof Albrecht and how major chords are coming home
+
+
 
 ## PROFESSORS
 
@@ -287,20 +305,22 @@ knitr::include_graphics("../img/network_songs.png")
 
 # How did this get started?
 
+. . . 
+
 ![](https://miro.medium.com/v2/resize:fit:1400/format:webp/1*vsJ0CYKATYtuIdMSBW8Ouw.gif)
 
 ## This is my life now
 ![](../img/ts_pca_simple.png)
 
-## STUDENTS!
 
-* INQUIRY: what are you interested in? what can you learn about it?
-* CULTIVATE your curiosity: approach questions from different perspectives
-* FIND something that interests you: LIFE IS FOR LIVING and it's ok to do something for fun
-  * Music class w/Prof Albrecht and how major chords are coming home
+## What will your next steps look like?
 
+* What are you interested in? 
+* How can you build a strong base?
+* Seminar on 'half-baked ideas'
+* Take advantage of your time here: tremendous opportunity for breadth
 
-
+### Cultivate a sense of curiosity about the world and your place in it ... how hard could it be?
 
 
 # Thank you!
