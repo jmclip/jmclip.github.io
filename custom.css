@@ -1,30 +1,53 @@
+/* ==========================================================================
+   Palette: Deep Sea (muted teal) + muted rust accent
+   --------------------------------------------------------------------------
+   --teal-deep    #1F4A4A   headers, sidebar top, active TOC     9.8:1 on white
+   --teal-mid     #2E6B68   navbars, TOC links, body links       6.1:1 on white
+   --teal-pale    #8FBFB8   hover fills, footer band
+   --teal-tint    #E4EFED   soft backgrounds
+   --rust         #A0552F   active states, link hover            5.5:1 on white
+   --rust-light   #B4633C   accent borders / secondary hover
+   ========================================================================== */
+
+:root {
+  --teal-deep:  #1F4A4A;
+  --teal-mid:   #2E6B68;
+  --teal-pale:  #8FBFB8;
+  --teal-tint:  #E4EFED;
+  --rust:       #A0552F;
+  --rust-light: #B4633C;
+  --on-dark:    #FFFFFF;
+}
+
 /* Active nav pills */
 #main .nav-pills > li.active > a,
 #main .nav-pills > li.active > a:hover,
 #main .nav-pills > li.active > a:focus {
-   background-color: #e15921; /* Showgirl Orange */
+  background-color: var(--rust);
+  color: var(--on-dark);
 }
 
 #main .nav-pills > li > a:hover {
-  background-color: #62b5a6; /* Curtain Call */
+  background-color: var(--teal-mid);
+  color: var(--on-dark);
 }
 
+/* Links */
 #main a:link {
-  color: #62b5a6; /* Happy Mint */
+  color: var(--teal-mid);
 }
 
-/* visited link */
 #main a:visited {
-  color: #62b5a6;
+  color: var(--teal-deep);
 }
 
-/* mouse over link */
 #main a:hover {
-  color: #e15921; /* Showgirl Orange */
+  color: var(--rust);
 }
 
-h1,h2,h3,h4,h5,h6,legend{
-    color: #d73f00; /* Curtain Call */
+/* Headings */
+h1, h2, h3, h4, h5, h6, legend {
+  color: var(--teal-deep);
 }
 
 h1 {
@@ -40,167 +63,152 @@ body {
 }
 
 #nav-top span.glyphicon {
-  color: #d73f00;
+  color: var(--teal-deep);
 }
 
-#table-of-contents header{
-    color: #fff;
-    background-color: #d73f00;
+/* Table of contents header block */
+#table-of-contents header {
+  color: var(--on-dark);
+  background-color: var(--teal-deep);
 }
 
-#table-of-contents h2{
-    background-color: #e15921; /* Showgirl Orange */
-    color: #fff;
+#table-of-contents h2 {
+  background-color: var(--teal-mid);
+  color: var(--on-dark);
 }
 
-a:hover{
-    color: #d73f00;
+a:hover {
+  color: var(--rust);
 }
 
-a:visited{
-    color: #e15921;
+a:visited {
+  color: var(--teal-deep);
 }
 
-#sidebar h2, postamble {
-    color: #FFFFFF;
-    background-color: #d73f00;
+/* Sidebar */
+#sidebar h2,
+postamble {
+  color: var(--on-dark);
+  background-color: var(--teal-deep);
+}
+
+#sidebar a {
+  display: block;
+  line-height: 18px;
+  padding: 0.4045em 1.618em;
+  position: relative;
+  font-size: 110%;
+  direction: ltr;
+  text-decoration: none;
+  color: var(--on-dark);
+  background-color: var(--teal-mid);
 }
 
 #sidebar a:hover {
-    background-color: #e15921;
+  background-color: var(--teal-deep);
+  color: var(--on-dark);
 }
 
-#sidebar a{
-    color: #FFFFFF;
-    display:block;
-    line-height:18px;
-    padding:0.4045em 1.618em;
-    position:relative;
-    font-size:110%;
-    direction: ltr;
-    text-decoration: none;
-    color: #fff;
-    background-color: #e15921;
+#sidebar {
+  max-width: 260px;
+  background-image: linear-gradient(180deg, var(--teal-deep), var(--teal-mid));
 }
 
-#sidebar{
-      max-width: 260px;
-      background-image: linear-gradient(180deg, #d73f00, #e15921);
-}
-   
+/* Navbar */
 .navbar {
-    color: #FFFFFF;
-    background-image: linear-gradient(120deg, #d73f00, #e15921);
+  color: var(--on-dark);
+  background-image: linear-gradient(120deg, var(--teal-deep), var(--teal-mid));
 }
 
 .navbar-default .navbar-brand {
-    color: #fff;
+  color: var(--on-dark);
 }
 
 .navbar-default .navbar-brand:focus,
 .navbar-default .navbar-brand:hover {
-    color: #62b5a6; /* Happy Mint */
-    background-color: transparent;
+  color: var(--teal-pale);
+  background-color: transparent;
 }
 
-.navbar-default .navbar-nav>li>a {
-    color: #FFF;
+.navbar-default .navbar-nav > li > a {
+  color: var(--on-dark);
 }
 
-.navbar-default .navbar-nav>li>a:focus,
-.navbar-default .navbar-nav>li>a:hover {
-    color: #FFF;
-    background-color: #e15921;
+.navbar-default .navbar-nav > li > a:focus,
+.navbar-default .navbar-nav > li > a:hover {
+  color: var(--on-dark);
+  background-color: var(--teal-mid);
 }
 
-.dropdown-menu>li>a:focus,
-.dropdown-menu>li>a:hover {
-    color: #d73f00;
-    text-decoration: none;
-    background-color: #f5f5f5;
+/* Dropdowns */
+.dropdown-menu > li > a:focus,
+.dropdown-menu > li > a:hover {
+  color: var(--on-dark);
+  text-decoration: none;
+  background-color: var(--teal-mid);
 }
 
-.dropdown-menu>.active>a,
-.dropdown-menu>.active>a:focus,
-.dropdown-menu>.active>a:hover {
-    color: #fff;
-    text-decoration: none;
-    background-color: #e15921;
-    outline: 0;
+.dropdown-menu > .active > a,
+.dropdown-menu > .active > a:focus,
+.dropdown-menu > .active > a:hover {
+  color: var(--on-dark);
+  text-decoration: none;
+  background-color: var(--rust);
+  outline: 0;
 }
 
-.dropdown-menu>li>a:focus,
-.dropdown-menu>li>a:hover {
-    color: #FFF;
-    text-decoration: none;
-    background-color: #d73f00;
-}
-
+/* Animated underline on body links */
 #main :not(.leaflet-control) > a {
-    background-image: linear-gradient(180deg, #e15921, #d73f00);
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    background-position: 0 2em;
-    color: #62b5a6; /* Happy Mint */
-    font-weight: 300;
-    padding: .125em 1px 0 1px;
-    transition: background-position .15s, color .15s;
+  background-image: linear-gradient(180deg, var(--teal-pale), var(--teal-mid));
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: 0 2em;
+  color: var(--teal-mid);
+  font-weight: 300;
+  padding: .125em 1px 0 1px;
+  transition: background-position .15s, color .15s;
 }
 
-#postamble{
-  background-color: #62b5a6; /* Happy Mint */
-  border-top: #62b5a6; /* Happy Mint */
+#postamble {
+  background-color: var(--teal-tint);
+  border-top: 1px solid var(--teal-pale);
+  color: var(--teal-deep);
 }
 
+/* --------------------------------------------------------------------------
+   Sidebar TOC nav
+   -------------------------------------------------------------------------- */
 
-/* Sidebar nav links */
 #toc ul.nav li a {
-  background-color: #e15921;   /* Showgirl Orange (default background) */
-  color: #fff;                 /* white text */
-  border-right: solid 1px #d73f00 !important; /* Curtain Call */
+  background-color: var(--teal-mid);
+  color: var(--on-dark);
+  border-right: solid 1px var(--teal-deep) !important;
   border-radius: 8px;
 }
 
-/* Active link (clicked link) */
+/* Active (current) link */
 #toc ul.nav li.active > a {
-  background-color: #d73f00 !important; /* Curtain Call */
-  color: #fff !important;               /* white text */
+  background-color: var(--rust) !important;
+  color: var(--on-dark) !important;
 }
 
-
-/* Hover link */
+/* Hover */
 #toc ul.nav li a:hover {
-  background-color: #62b5a6 !important; /* Happy Mint */
-  color: #d73f00 !important; 
+  background-color: var(--teal-pale) !important;
+  color: var(--teal-deep) !important;
 }
 
-/* Active submenu items */
-#toc ul.nav li.active ul li a {
-  background-color: #e15921;   /* Showgirl Orange */
-  color: #fff !important; 
-}
-
-#toc ul.nav li.active ul li.active ul li a {
-  background-color: #e15921; /* Showgirl Orange */
-  color: #fff !important; 
-}
-
-#toc ul.nav li.active ul li.active ul li a {
-    background-color: #e15921; /* Showgirl Orange */
-  color: #fff !important; 
-}
-
-#toc ul.nav li.active ul li.active a {
-      background-color: #e15921; /* Showgirl Orange */
-  color: #fff !important; 
-}
-
+/* Submenu items under an active section */
+#toc ul.nav li.active ul li a,
+#toc ul.nav li.active ul li.active a,
+#toc ul.nav li.active ul li.active ul li a,
 #toc ul.nav li.active ul li.active ul li.active a {
-background-color: #e15921; /* Showgirl Orange */
-  color: #fff !important; 
+  background-color: var(--teal-mid);
+  color: var(--on-dark) !important;
 }
 
+/* Nested submenu default */
 #toc ul.nav li ul li a {
-  background-color: #d73f00 !important; /* Curtain Call */
-  color: #fff !important; 
+  background-color: var(--teal-deep) !important;
+  color: var(--on-dark) !important;
 }
