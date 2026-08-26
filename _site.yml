@@ -1,25 +1,25 @@
-name: "Clipperton" #should be the title in the browswer tab
+name: "clipperton-site"   # internal site id only — not the tab title
 output_dir: "."
-
 navbar:
   title: "Jean Clipperton, PhD: Computational Social Scientist"
   right:
     - text: "Home"
       href: index.html
-    - text: 'Teaching' ## setting up a drop down menu
+    - text: 'Teaching'
       menu:
         - text: 'Courses'
           href: courses.html
         - text: 'Teaching Philosophy'
           href: teaching.html
-    - text: 'Research' 
+    - text: 'Research'
       href: research.html
     - icon: fa-brands fa-orcid
       href: https://orcid.org/0000-0001-8833-0052
     - icon: fa-github fa-lg
       href: http://github.com/jmclip
-output: 
+output:
   rmdformats::readthedown:
     toc_depth: 4
     css: custom.css
-
+    includes:
+      in_header: meta.html
