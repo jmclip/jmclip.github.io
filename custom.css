@@ -253,6 +253,6 @@ postamble {
   }
   .intro-photo {
     flex: 0 0 auto;
-    max-width: 190px;
+    max-width: 140px;
   }
 }
