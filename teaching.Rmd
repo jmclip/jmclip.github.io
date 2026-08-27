@@ -1,5 +1,6 @@
 ---
 title: "Teaching Philosophy"
+pagetitle: "Clipperton Teaching Philosophy"
 output: html_document
 ---
 
