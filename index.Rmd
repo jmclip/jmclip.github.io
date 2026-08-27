@@ -1,13 +1,22 @@
 ---
-title: ""
-output: 
+title: "Jean Clipperton, PhD"
+pagetitle: "Jean Clipperton, PhD | Computational Social Scientist"
+---output: 
   html_document:
 
 ---
 
 # Hello!
 
-I am an [Associate Director of MACSS and Associate Senior Instructional Professor](https://macss.uchicago.edu/directory/Jean-Clipperton) at the University of Chicago. I oversee our MA program's curriculum, mentor our teaching staff, and develop computationally-focused courses. I am a political scientist and computational social scientist and study how individuals create and interpret meaning through language, emotion, and culture, particularly in political contexts. My research bridges political communication, political behavior, sociology, psychology, and institutional analysis. At the center of my research is a core question: how do individuals and institutions use language to create shared understanding and construct identity? 
+::: {.intro}
+::: {.intro-text}
+I am an [Associate Director of MACSS and Associate Senior Instructional Professor](https://macss.uchicago.edu/directory/Jean-Clipperton) at the University of Chicago. I oversee our MA program's curriculum, mentor our teaching staff, and develop computationally-focused courses. I am a political scientist and computational social scientist and study how individuals create and interpret meaning through language, emotion, and culture, particularly in political contexts. My research bridges political communication, political behavior, sociology, psychology, and institutional analysis. At the center of my research is a core question: how do individuals and institutions use language to create shared understanding and construct identity?
+:::
+
+::: {.intro-photo}
+![Jean Clipperton](img/clipperton_profile.jpg)
+:::
+:::
 
 ## Research
 
