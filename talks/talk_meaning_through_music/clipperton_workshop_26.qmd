@@ -376,13 +376,13 @@ ggplot(camp, aes(c1, c2, colour = party)) +
 
 :::: {.status-rows}
 ::::: {.status}
-[Pre-2016 campaigns]{.name} [[status]]{.tag .tag-blue}
+[Pre-2016 campaigns]{.name} [[Data gathering]]{.tag .tag-blue}
 :::::
 ::::: {.status}
-[Songs vs. speeches]{.name} [[status]]{.tag .tag-red}
+[Songs vs. speeches]{.name} [[Data gathering + preliminary analysis]]{.tag .tag-red}
 :::::
 ::::: {.status}
-[Fandom as home]{.name} [[status]]{.tag .tag-cream}
+[Fandom as home]{.name} [[Analysis]]{.tag .tag-cream}
 :::::
 ::::
 :::
@@ -414,13 +414,13 @@ ggplot(camp, aes(c1, c2, colour = party)) +
 
 :::: {.facts}
 ::::: {.fact}
-[Data]{.k} [[songs, sources, how many]]{.v}
+[Data]{.k} [Songs from Billboard Hot 100 (1958-now) + Last.fm streaming data]{.v}
 :::::
 ::::: {.fact}
-[Time period]{.k} [[years / elections covered]]{.v}
+[Time period]{.k} [US Presidential Candidates (campaigns with >5 songs and multiple events) 2016*-2024]{.v}
 :::::
 ::::: {.fact .last}
-[Comparison set]{.k} [[songs campaigns could have played]]{.v}
+[Research Q]{.k} [How do campaign songs compare to songs *not* selected by campaigns?]{.v}
 :::::
 ::::
 :::
@@ -432,11 +432,10 @@ ggplot(camp, aes(c1, c2, colour = party)) +
 ## {background-color="#14213D"}
 
 ::: {.frame .dark}
-[Jean Clipperton]{.label}
+[]{.label}
 
 ::: {.h-thanks}
-Thank\
-[you.]{.coral}
+[Thank]{.blue} [you.]{.coral}
 :::
 
 [clipperton@uchicago.edu]{.lede .mist}
