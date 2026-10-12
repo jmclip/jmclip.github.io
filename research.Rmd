@@ -10,11 +10,11 @@ I have four main projects in process right now -- all generally computational in
 
 ## Political Candidate Playlists
 
-In this project, I analyze songs used by US political candidates in their campaigns in the 2016, 2020, and 2024 presidential elections. The project is underway, but in preliminary findings I observe that political candidates favor music incorporating themes of trust and increasingly use songs with prosocial messages. Republican candidates have less emotional music that has incorporated more male references over time. Democratic candidates have music that feature more moral references and has had a more negative tone over subsequent election cycles. 
+In this project, I analyze songs used by US political candidates in their campaigns in the 2016, 2020, and 2024 presidential elections. I find both cross-party and within-party patterns, including statistically significant and visually distinct partisan asymmetries along temporal and emotional axes in PCA space. Republican candidates favor songs focused on the past and rich in trust and joy and non-Trump Republicans draw more on country music, while Democratic playlists are more varied. Across his three bids, Donald Trump’s playlists move steadily toward a “golden era” register: joyful, trusting, and religious lyrics with increasingly male references.
 
 ## Music lyrics
 
-This is a multifaceted project looking at new methodological approaches to text analysis. In the initial project, we explore one artist's cannon and analyze distinctions between rhetoric-focused and emotion-focused language, mapping a landscape across the career of Taylor Swift. This article is forthcoming at *Psychology of Creativity, Aesthetics, and the Arts.*
+This is a multifaceted project looking at new methodological approaches to text analysis. In the initial project, we explore one artist's cannon and analyze distinctions between rhetoric-focused and emotion-focused language, mapping a landscape across the career of Taylor Swift. This article is out at *Psychology of Creativity, Aesthetics, and the Arts.*
 
 
 ```{r, echo = F, out.width="80%", out.height="70%",fig.cap="PCA of Taylor Swift's Catalogue",fig.show='hold',fig.align='center',fig.alt = "Average data points for albums in Taylor Swift's catalogue from lyric to emotion-focused and negative to positive emotion"}
@@ -40,6 +40,8 @@ This project is a collaboration on ABM design from a perspective of better means
 * Alter, K., Clipperton, J., Schraudenbach, E., & Rozier, L. (2020). Gender and Status in American Political Science: Who Determines Whether a Scholar Is Noteworthy? Perspectives on Politics, 18(4), 1048-1067. doi:10.1017/S1537592719004985
  
 # Talks
+* Clipperton, Jean. 2026. ["Cultivated Curiosity"]() University of Chicago Laboratory School, University of Chicago, Fall 2025
+* Clipperton, Jean. 2026. ["Meaning through Music"](talks/clipperton_workshop_26.html) MACSS Computational Social Science Workshop, University of Chicago, Fall 2026
 *  Clipperton, Jean. 2025. ["It's a new soundtrack: political candidates, campaigns, and playlists"](talks/clipperton_workshop_25.html) MACSS Computational Social Science Workshop, University of Chicago, Fall 2025
 * Simpson College, ["cultivated curiosity and the liberal arts education"](talks/simpson_25/liberal_arts_ed.html) Fall 2025
 
