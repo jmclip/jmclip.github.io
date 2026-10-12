@@ -1,0 +1,199 @@
+---
+title: "Does music make the campaign?"
+author: "Jean Clipperton"
+format:
+  revealjs:
+    theme: [custom_26.scss]
+    slide-number: "c/t"
+    show-slide-number: "all"
+    embed-resources: true
+---
+
+
+## What makes a campaign song and does it matter who plays it?
+::: {.columns}
+
+::: {.column width="50%"}
+![Kamala Harris and pop star Beyoncé](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmHMVRtT8G_7DrGLUMPlfC-KexJ7ApjSAFTIbfZoAKMw&s=10)
+
+::: {.tiny-source}
+[Source Link](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmHMVRtT8G_7DrGLUMPlfC-KexJ7ApjSAFTIbfZoAKMo&s=10)
+:::
+:::
+
+::: {.column width="50%"}
+![Donald Trump and singer Lee Greenwood](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNfKvXEXPfzqaeqX0PFAmC-3Xut6OGBW_2X6CyUc3hmQ&s=10)
+
+::: {.tiny-source}
+[Source Link](https://www.theguardian.com/us-news/2024/oct/03/donald-trump-michigan-rally-car-industry)
+:::
+:::
+
+:::
+
+
+## Roadmap
+
+* Research question
+* Party asymmetries
+* Campaign rally data
+* Methods
+* Results
+
+
+## Is there candidate-specific or party-specific campaign song messaging?
+::: {.fragment}
+Spoiler alert: yes there is party-specific messaging
+:::
+
+## Literature
+
+* **Asymmetric differences** between parties:
+  * **Republican** parties compete on conservatism
+  * **Democratic** parties compete by attracting different groups
+* Candidates have different theories of representation and brands they cultivate
+  * **Gyroscopic candidates** are the brand themselves -- their judgment is to be trusted/relied upon
+
+## Republican Party
+Republican candidates will emphasize and compete on conservatism.
+
+* **Religion** is not a core value but associated with core values
+* **Bygone era/nostalgia** as a reference to older days and time gone by
+
+
+## [Democratic Party]{.dem}
+Emphasis on group-specific factors, diversity of candidate messaging and variety.
+
+## Campaigns in focus: **Republican** front-runners
+
+### Trump 2016, 2020, 2024
+* **Trump** campaigned as an anti-establishment candidate with an emphasis on 'fixing'
+* **"Make America Great Again"** firmly looks to the past
+
+
+## Campaigns in focus: [Democratic]{.dem} front-runners
+
+### Clinton 2016
+**[Clinton]{.dem}** emphasized unity and as someone to care for constituents
+
+### Biden 2020
+**[Biden]{.dem}** cultivated a folksy approachable reputation of "Uncle Joe", someone authentic
+
+### Harris 2024
+**[Harris]{.dem}** had a compressed campaign but described her and Walz as joyful warriors.
+
+## Hypotheses: Party
+
+* Differences will affect party-level trends in campaign music
+  * **Republican** candidates will emphasize conservative values
+  * [Democratic]{.dem} candidates will emphasize group values
+
+* Party-level genre differences: Pop for Democrats and Country for Republicans
+
+## Hypotheses: Candidates
+* Candidates within parties will differ based on branding and identity
+  * **Trump**: self-centered, masculine values, focused on the past
+  * **[Harris]{.dem}**: joy and conflict messages (questions on campaign location)
+  * **[Biden]{.dem}**: authenticity and trust
+  * **[Clinton]{.dem}**: care and outcomes
+  
+
+
+# Data
+
+* US Presidential candidates with six or more English-language lyrical songs (up to 15 total songs per candidate)
+* Data in song-candidate-campaign format
+* Lyrics from Genius and LyricsMania
+
+
+## Summary data
+
+| Candidate   | 2016 | 2020 | 2024 |
+|:------------|-----:|-----:|-----:|
+| **Republicans** | | | |
+| Trump       | 15   | 15   | 15   |
+| Bush        | 11   | –    | –    |
+| Cruz        | 12   | –    | –    |
+| Haley       | –    | –    | 9    |
+| Pence       | –    | –    | 8    |
+| **[Democrats]{.dem}** | | | |
+| Clinton     | 15   | –    | –    |
+| Sanders     | 15   | 15   | –    |
+| Biden       | –    | 15   | 7    |
+| Harris      | –    | 15   | 15   |
+| Booker      | –    | 15   | –    |
+| Buttigieg   | –    | 14   | –    |
+| Warren      | –    | 6    | –    |
+| Yang        | –    | 15   | –    |
+| **Total**   | **68** | **110** | **54** |
+
+: Songs per campaign. 232 songs in total (195 distinct) across 13 candidates. {.summary-table}
+
+
+## Methods
+* **Lexicon-based** methods
+  * **LIWC**
+  * **NRC** (emotion and valence)
+* Unsupervised machine learning (**Principal Component Analysis**)
+  * Other methods considered but not appropriate (more in Q & A)
+
+## PCA
+
+![PCA variable loadings](../img/pca_var.png){.r-stretch fig-align="center"}
+
+# Results
+
+## Party-level differences
+![Genre, by party](../img/genre_party_lean.png){.r-stretch fig-align="center"}
+
+## Party-level differences
+![Temporal focus, by party](../img/liwc_party_focus.png){.r-stretch fig-align="center"}
+
+## Candidate-level differences: Trump
+![Trump: feminine vs. masculine](../img/liwc_party_trump_fem_male.png){.r-stretch fig-align="center"}
+
+## Candidate-level differences: Clinton
+
+::: {.columns}
+::: {.column width="50%"}
+![Prosocial, by frontrunner](../img/liwc_cand_clinton_prosocial.png){width="100%" fig-align="center"}
+:::
+
+::: {.column width="50%"}
+![Affiliation, by frontrunner](../img/liwc_cand_clinton_affiliation.png){width="100%" fig-align="center"}
+:::
+
+:::
+
+
+## Candidate-level differences: Biden
+
+::: {.columns}
+::: {.column width="50%"}
+![Authentic, by frontrunner](../img/liwc_cand_biden_Authentic.png){width="100%" fig-align="center"}
+:::
+
+::: {.column width="50%"}
+![Trust, by frontrunner](../img/liwc_cand_Biden_NRC_trust.png){width="100%" fig-align="center"}
+:::
+
+:::
+
+
+## Overall analysis: party and campaign
+![PCA analysis](../img/pca_cand_boot.png){.r-stretch fig-align="center"}
+# Conclusions + So what
+* What they play does seem to be meaningful for the campaign
+* Limited data range (2016-2024) + limited audio features
+* Comparison between what they say and what they play
+
+
+# Thank you!
+Questions: clipperton@uchicago.edu
+
+## FAQ
+
+## Methods not incorporated
+
+* **Embeddings**: concerns re: bias in pretrained models and not enough data to train models
+* **BERT-type** models: structure and size of data make these models challenging

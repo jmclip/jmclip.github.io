@@ -1,0 +1,146 @@
+/**
+ * Solarized Dark theme for reveal.js.
+ * Author: Achim Staebler
+ *
+ * Adapted for Quarto by Posit, PBC
+ * Copyright (C) 2024 Posit, PBC
+ */
+
+/*-- scss:defaults --*/
+
+// Fonts: Alata (body), Rye (title), Baumans (author)
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Baumans&family=Rye&display=swap');
+$font-family-sans-serif: "Alata", sans-serif !default;
+
+/**
+ * Solarized colors by Ethan Schoonover
+ */
+$base03: #002b36;
+$base02: #073642;
+$base01: #586e75;
+$base00: #657b83;
+$base0: #839496;
+$base1: #93a1a1;
+$base2: #eee8d5;
+$base3: #fdf6e3;
+$yellow: #b58900;
+$orange: #cb4b16;
+$red: #dc322f;
+$magenta: #d33682;
+$violet: #6c71c4;
+$blue: #268bd2;
+$cyan: #2aa198;
+$green: #859900;
+
+// Override theme settings
+$body-color: $base1 !default;
+$presentation-heading-color: $base2 !default;
+$presentation-heading-text-shadow: none !default;
+$body-bg: $base03 !default;
+$link-color: $blue !default;
+$selection-bg: $magenta !default;
+
+// Change text colors against light slide backgrounds
+$light-bg-text-color: #222 !default;
+
+// input panel
+$input-panel-bg: rgba(233, 236, 239, 0.2) !default;
+
+/*-- scss:rules --*/
+
+/* Title slide: title in Rye */
+.reveal div.slide.title-slide h1.title,
+.reveal .title-slide h1,
+.quarto-title-block h1.title {
+  font-family: "Rye", serif !important;
+  font-size: 2.8em !important;
+  text-transform: none !important;
+  color: $base2 !important;
+  // This thins out the heavy wood-type letterforms
+  -webkit-text-stroke: 0.01px 
+#002b36; 
+  /* Matches dark background color to bite into the edges */
+  color: 
+#eee8d5 !important;
+}
+
+/* Title slide: author in Baumans */
+.reveal div.slide.title-slide .author,
+.reveal .title-slide .author,
+.quarto-title-block .quarto-title-author {
+  font-family: "Baumans", cursive, sans-serif !important;
+  color: $base2 !important;
+  font-size: 1.4em !important;
+  margin-top: 15px !important;
+}
+
+.reveal .slides section h2 { 
+  font-size: 1.25em !important; 
+  
+}
+
+.reveal .slides section h3 { 
+  font-size: 0.9em !important; 
+  
+}
+
+.tiny-source {
+  font-size: 0.5em !important;
+  opacity: 0.7;
+}
+
+/* Slide numbers */
+.reveal .slide-number {
+  font-family: "Alata", sans-serif !important;
+  font-size: 0.3em !important;
+  color: $base0 !important;
+  background-color: transparent !important;
+  right: 20px !important;
+  bottom: 20px !important;
+}
+
+/* Bold text in red */
+.reveal strong,
+.reveal b {
+  color: $red !important;
+}
+
+/* Side-by-side graphs: centered and as tall as possible */
+.reveal .columns {
+  align-items: center;
+}
+.reveal .columns img {
+  max-height: 75vh;
+  width: 100%;
+  object-fit: contain;
+}
+
+/* Summary table: booktabs-style rules, visible on the dark background */
+.reveal table {
+  font-size: 0.5em;
+  border-collapse: collapse;
+  margin: 0 auto;
+}
+.reveal table th,
+.reveal table td {
+  border: none;
+  padding: 0.15em 1em;
+}
+.reveal table thead th {
+  color: $base2;
+  border-top: 2px solid $base1;
+  border-bottom: 1px solid $base1;
+}
+.reveal table tbody tr:last-child td {
+  border-top: 1px solid $base1;
+  border-bottom: 2px solid $base1;
+}
+.reveal table caption {
+  caption-side: bottom;
+  font-size: 0.8em;
+  color: $base0;
+  padding-top: 0.5em;
+}
+
+.dem { color: #7FA7D9; }
+.rep { color: #C62828; }
