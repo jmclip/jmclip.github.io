@@ -41,7 +41,7 @@ This project is a collaboration on ABM design from a perspective of better means
  
 # Talks
 * Clipperton, Jean. 2026. ["Cultivated Curiosity"]() University of Chicago Laboratory School, University of Chicago, Fall 2025
-* Clipperton, Jean. 2026. ["Meaning through Music"](talks//Users/jeanclipperton/jmclip.github.io/talks/talk_meaning_through_music/clipperton_workshop_26.html) MACSS Computational Social Science Workshop, University of Chicago, Fall 2026
+* Clipperton, Jean. 2026. ["Meaning through Music"](talks/talk_meaning_through_music/clipperton_workshop_26.html) MACSS Computational Social Science Workshop, University of Chicago, Fall 2026
 *  Clipperton, Jean. 2025. ["It's a new soundtrack: political candidates, campaigns, and playlists"](talks/clipperton_workshop_25.html) MACSS Computational Social Science Workshop, University of Chicago, Fall 2025
 * Simpson College, ["cultivated curiosity and the liberal arts education"](talks/simpson_25/liberal_arts_ed.html) Fall 2025
 
