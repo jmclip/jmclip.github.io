@@ -1,0 +1,488 @@
+---
+title: "Meaning through Music"
+author: "Jean Clipperton"
+format:
+  revealjs:
+    theme: [default, custom.scss]
+    width: 1920
+    height: 1080
+    margin: 0
+    center: false
+    transition: slide
+    slide-number: false
+    controls: true
+    title-slide-attributes:
+      data-visibility: hidden
+execute:
+  echo: false
+  warning: false
+  message: false
+knitr:
+  opts_chunk:
+    dev: ragg_png
+    dpi: 200
+    fig-align: center
+---
+
+```{r setup}
+# Figures are drawn from data/*.csv, built by prep_figure_data.R
+library(tidyverse)
+library(ggrepel)
+
+bg     <- "#FBF8F3"; ink <- "#1F2A2E"; grey_pt <- "#DCD6CB"
+orange <- "#A9441D"; teal_early <- "#5eb298"; teal_mid <- "#3e8f7c"; teal_late <- "#024C44"
+dem    <- "#2F5F9E"; rep <- "#7F1D1D"; dem_fill <- "#7FA7D9"; rep_fill <- "#C62828"
+
+swift <- read_csv("data/swift_pca_songs.csv", show_col_types = FALSE) |>
+  mutate(showgirl = str_detect(Album, "Showgirl"))
+genre <- read_csv("data/genre_residuals.csv", show_col_types = FALSE)
+cents <- read_csv("data/campaign_centroids.csv", show_col_types = FALSE)
+
+short_album <- function(x) str_remove(x, " \\((TV|DE|TD|Anthology)\\)")
+
+# Swift's quadrant labels (from the original PCA figures)
+quad_labels <- function(pos) {
+  list(
+    annotate("text", x = pos$x, y = pos$y, label = pos$main, colour = "grey45",
+             size = 7, fontface = "bold.italic", family = "Helvetica"),
+    annotate("text", x = pos$x, y = pos$y - pos$gap, label = pos$sub, colour = "grey45",
+             size = 4.6, fontface = "italic", family = "Helvetica")
+  )
+}
+quad_text <- tibble(
+  main = c("Long live", "Glitter pen", "Sad, Beautiful, Tragic", "Melancholy and anger", "Fountain pen"),
+  sub  = c("for the hope of it all", "just keep dancing", "Once again with feeling",
+           "female rage: the musical", "this ain't a fairytale"))
+
+theme_talk <- function(base = 24) {
+  theme_minimal(base_size = base, base_family = "Helvetica") +
+    theme(plot.background = element_rect(fill = bg, colour = NA),
+          panel.background = element_rect(fill = bg, colour = NA),
+          panel.grid = element_blank(),
+          axis.text = element_text(colour = "#6B6459"),
+          axis.title = element_text(colour = ink))
+}
+```
+
+## {background-color="#14213D"}
+
+::: {.frame .dark}
+[]{.label}
+
+::: {.h-cover}
+Meaning through Music
+:::
+
+[Lyrics, campaigns and fandom · Jean Clipperton]{.lede .mist style="font-size:60px"}
+:::
+
+<div class="bar-bottom"></div>
+
+::: {.notes}
+~30 sec. Hi, I'm Jean Clipperton. My research uses computational text analysis to study popular culture — mostly music — and what it tells us about emotion, identity and politics. I'll start with Taylor Swift's newest album, then presidential campaign playlists, then where the work is heading.
+:::
+
+## {background-color="#F4EFE4"}
+
+::: {.frame}
+[Projects]{.label}
+
+:::: {.projects}
+::::: {.proj}
+[01]{.num style="color:#A9441D"} [Swiftian saudade]{.title} [Joy and sorrow in Taylor Swift's lyrics, now with *Showgirl*]{.desc}
+:::::
+::::: {.proj style="padding-bottom:12px"}
+[02]{.num .blue} [Campaign playlists]{.title} [232 rally songs, 2016–2024: what they say about party and candidate]{.desc}
+:::::
+::::: {.proj .sub-row}
+[↳ Expanding the data]{.title .blue} [Adding campaigns before 2016]{.desc}
+:::::
+::::: {.proj}
+[03]{.num .red} [Songs vs. speeches]{.title} [Do Harris's and Trump's 2024 rally songs echo what they said?]{.desc}
+:::::
+::::: {.proj .last}
+[04]{.num} [Fandom as home]{.title} [337,793 Reddit comments: how fans build a third place]{.desc}
+:::::
+::::
+:::
+
+::: {.notes}
+~1.5 min. Here's my work at a glance. I'll go deeper on the first two. Swiftian saudade looks at joy and sorrow in Taylor Swift's lyrics. Campaign playlists covers 2016 to 2024, and I'm now expanding the data to campaigns before 2016. Two more are in progress. Songs versus speeches: for the 2024 Harris and Trump campaigns, do the songs they played line up with what they said on the trail? Fandom as a third place: using eight subreddits — about 338 thousand comments from February 2025 — I look at how fan communities connect online spaces to concerts, games and watch parties. The common toolkit: score text with lexicons like LIWC and NRC, then use PCA to map it.
+:::
+
+## {background-color="#A9441D"}
+
+::: {.frame .dark}
+[01 · Taylor Swift]{.label .mint}
+
+:::: {.stack}
+::::: {.h-huge}
+Swiftian Saudade:\
+[joy and sorrow]{.mint}\
+interwoven.
+:::::
+
+[Taylor Swift's lyrics analyzed with lexicon approaches]{.lede}
+::::
+
+[*"You do not get to tell me about Sad": Swiftian Saudade in Taylor Swift's Lyrics* (2026) · 423 tracks]{.cite style="color:#F3D9CC"}
+:::
+
+::: {.notes}
+~1 min. This builds on our published article on Swiftian saudade. Saudade is a Portuguese word for bittersweet longing — happiness and sadness held together. We operationalize it with the NRC emotion lexicon: a song is saudade when sadness is in its top three emotions together with joy or anticipation. The dataset covers 423 tracks across every album version, and I updated it the week The Life of a Showgirl came out.
+:::
+
+## {background-color="#F4EFE4"}
+
+::: {.split}
+:::: {.split-text .w640 .rust-panel}
+[01 · Taylor Swift]{.label .mint}
+
+[What the map is made of]{.h-split style="font-size:96px"}
+
+[Left to right: lyric-focused to [emotion-focused]{.mint} language. Bottom to top: negative to positive tone.]{.sub}
+::::
+
+:::: {.split-fig .fig-orange}
+![](ts_pca_varTS.png){fig-alt="PCA variable loadings for Swift's lyrics: Tone, tone_pos and NRC joy point up; NRC anger, fear, sadness and tone_neg point right and slightly down; Affect points up-right."}
+::::
+:::
+
+::: {.notes}
+~45 sec. Before the albums, here's what the axes mean. Each arrow is a lexicon measure. Positive tone and joy pull up; anger, fear, sadness and negative tone pull right — emotion-heavy writing. Dim 1 explains 15.4% of variance, Dim 2 11.8%.
+:::
+
+## {background-color="#F4EFE4"}
+
+::: {.split}
+:::: {.split-text .w640 .rust-panel}
+[01 · Taylor Swift]{.label .mint}
+
+[Clear era clustering]{.h-split style="font-size:100px"}
+
+[Early, mid-career and current albums each form their own cluster. [Showgirl]{.mint} may be ushering in a new era.]{.sub}
+::::
+
+:::: {.split-fig .fig-orange}
+```{r eras-map}
+#| fig-width: 11
+#| fig-height: 7.6
+#| fig-alt: "Album averages on the PCA map: early-career albums cluster on the lyric-focused side, mid-career albums near the centre, folklore, evermore and TTPD emotion-focused and negative; Showgirl sits alone in the upper right."
+era_of <- function(a) case_when(
+  a %in% c("Taylor Swift", "Fearless (TV)", "Speak Now (TV)", "Red (TV)") ~ "Early career",
+  a %in% c("1989 (TV)", "Reputation", "Lover")                          ~ "Mid career",
+  a %in% c("folklore (DE)", "evermore (DE)", "TTPD (Anthology)")         ~ "Current era",
+  str_detect(a, "Showgirl")                                              ~ "Showgirl",
+  TRUE                                                                   ~ "Midnights")
+era_col <- c("Early career" = teal_early, "Mid career" = teal_mid, "Current era" = teal_late,
+             "Midnights" = teal_late, "Showgirl" = orange)
+
+albums <- swift |> group_by(Album) |>
+  summarise(x = mean(pc1), y = mean(pc2), .groups = "drop") |>
+  mutate(era = era_of(Album), lab = if_else(era == "Showgirl", "Showgirl", short_album(Album)))
+
+# ellipses fitted around each era's album averages (padded bounding box)
+ell <- albums |> filter(era %in% c("Early career", "Mid career", "Current era")) |>
+  group_by(era) |>
+  summarise(cx = (min(x) + max(x)) / 2, cy = (min(y) + max(y)) / 2,
+            a = (max(x) - min(x)) / 2 + 0.32, b = (max(y) - min(y)) / 2 + 0.2, .groups = "drop")
+ell_pts <- ell |> mutate(t = list(seq(0, 2 * pi, length.out = 120))) |> unnest(t) |>
+  mutate(px = cx + a * cos(t), py = cy + b * sin(t))
+
+quad <- bind_cols(quad_text, x = c(-1.45, -0.35, 1.6, 1.75, -1.45), y = c(1.2, 1.3, 0.6, -0.27, -0.9), gap = 0.1)
+
+# era names sit outside their ellipse so they don't cover album labels
+ell_lab <- ell |> mutate(
+  lx    = case_when(era == "Mid career" ~ cx + a + 0.04, TRUE ~ cx),
+  ly    = case_when(era == "Early career" ~ cy + b + 0.08, era == "Mid career" ~ cy + 0.04, TRUE ~ cy - b - 0.09),
+  hjust = if_else(era == "Mid career", 0, 0.5))
+
+ggplot() +
+  geom_hline(yintercept = 0, colour = "grey75", linetype = "dashed", linewidth = 0.4) +
+  geom_vline(xintercept = 0, colour = "grey75", linetype = "dashed", linewidth = 0.4) +
+  geom_polygon(data = ell_pts, aes(px, py, group = era, fill = era, colour = era), alpha = 0.25, linewidth = 0.8) +
+  geom_text(data = ell_lab, aes(lx, ly, label = paste(era, "albums"), colour = era, hjust = hjust),
+            size = 6.4, fontface = "bold", family = "Helvetica") +
+  geom_point(data = albums, aes(x, y, colour = era), size = 4, shape = 15) +
+  geom_text_repel(data = albums |> filter(era != "Showgirl"), aes(x, y, label = lab, colour = era),
+                  size = 6.2, family = "Helvetica", seed = 3, box.padding = 0.4, min.segment.length = 0.3) +
+  geom_point(data = albums |> filter(era == "Showgirl"), aes(x, y), colour = orange, size = 8, shape = 18) +
+  annotate("text", x = albums$x[albums$era == "Showgirl"] + 0.08, y = albums$y[albums$era == "Showgirl"] + 0.12,
+           label = "Showgirl", colour = orange, size = 8, fontface = "bold", family = "Helvetica", hjust = 0) +
+  quad_labels(quad) +
+  scale_colour_manual(values = era_col, guide = "none") +
+  scale_fill_manual(values = era_col, guide = "none") +
+  coord_cartesian(xlim = c(-1.9, 2.25), ylim = c(-1.22, 1.4)) +
+  labs(x = "Lyric-focused  →  emotion-focused", y = "Negative  →  positive emotion") +
+  theme_talk()
+```
+::::
+:::
+
+::: {.notes}
+~1 min. This is the era map from our article, updated with Showgirl. Each point is an album average, one version per era. Left to right runs from lyric-focused to emotion-focused writing; bottom to top from negative to positive emotion. Albums cluster by era: early career albums on the lyric-focused side; mid-career albums near the middle; the folklore, evermore and TTPD era emotion-focused and more negative. Midnights sits on its own above the mid-career cluster. Showgirl breaks away up and to the right — the most positive of any era.
+:::
+
+## {background-color="#F4EFE4"}
+
+::: {.split}
+:::: {.split-text .w640 .rust-panel}
+[01 · Taylor Swift]{.label .mint}
+
+[[Showgirl]{.mint} is her most positive era.]{.h-split}
+
+[Second only to *TTPD* in emotional focus.]{.sub}
+::::
+
+:::: {.split-fig .fig-orange}
+```{r showgirl-songs}
+#| fig-width: 11
+#| fig-height: 7.6
+#| fig-alt: "Song-level PCA map: grey dots are songs, teal squares album averages, orange points Showgirl songs, spread from The Life of a Showgirl at the top to Patient Zero at the bottom."
+sg <- swift |> filter(showgirl)
+keep_sg <- c("The Life", "Ruin The", "Pink Clouding", "Eldest Daughter", "CANCELLED!", "Patient Zero", "Actually Romantic")
+sg_lab <- sg |> filter(song %in% keep_sg) |>
+  mutate(song = recode(song, "Ruin The" = "Ruin the Friendship", "The Life" = "The Life of a Showgirl"))
+cent <- swift |> group_by(Album, showgirl) |> summarise(x = mean(pc1), y = mean(pc2), .groups = "drop") |>
+  mutate(lab = short_album(Album))
+sg_avg <- cent |> filter(showgirl)
+
+quad <- bind_cols(quad_text, x = c(-2.3, -1.3, 3.7, 3.7, -2.3), y = c(3.4, 4.7, 3.5, -1.8, -1.6), gap = 0.28)
+
+ggplot() +
+  geom_hline(yintercept = 0, colour = "grey75", linetype = "dashed", linewidth = 0.4) +
+  geom_vline(xintercept = 0, colour = "grey75", linetype = "dashed", linewidth = 0.4) +
+  quad_labels(quad) +
+  geom_point(data = swift |> filter(!showgirl), aes(pc1, pc2), colour = grey_pt, size = 2.2) +
+  geom_point(data = sg, aes(pc1, pc2), colour = orange, size = 3.6, alpha = 0.9) +
+  geom_text_repel(data = sg_lab, aes(pc1, pc2, label = song), colour = orange, size = 6.2,
+                  family = "Helvetica", seed = 4, max.overlaps = Inf, force = 2, box.padding = 0.35,
+                  min.segment.length = 0.3, segment.colour = "#E3B49B") +
+  geom_point(data = cent |> filter(!showgirl), aes(x, y), colour = teal_late, size = 4.4, shape = 15) +
+  geom_text_repel(data = cent |> filter(!showgirl), aes(x, y, label = lab), colour = teal_late, size = 6.4,
+                  fontface = "bold", family = "Helvetica", seed = 7, box.padding = 0.7, force = 3,
+                  max.overlaps = 50, min.segment.length = 0.2, segment.colour = "#9CBDB7") +
+  geom_point(data = sg_avg, aes(x, y), colour = orange, size = 8, shape = 18) +
+  annotate("text", x = sg_avg$x + 0.18, y = sg_avg$y + 0.45, label = "Showgirl average", colour = orange,
+           fontface = "bold", size = 7.6, family = "Helvetica", hjust = 0) +
+  coord_cartesian(xlim = c(-3.4, 5.0), ylim = c(-2.1, 5.2)) +
+  labs(x = "Lyric-focused  →  emotion-focused", y = "Negative  →  positive emotion") +
+  theme_talk()
+```
+::::
+:::
+
+::: {.notes}
+~1.5 min. Now each song. Grey dots are songs; teal squares are album averages; orange is Showgirl. Showgirl's average sits up and to the right: the most positive of any era, and second only to TTPD in emotional focus. It also has the most joy words per song of any era — 17.6 — yet 31 percent of its songs still meet the saudade definition. Inside the album the spread is wide: the title track and Ruin the Friendship sit far up top, Eldest Daughter (track five) is intensely emotional, and Patient Zero is the most negative song on the record.
+:::
+
+## {background-gradient="linear-gradient(to right, #2D5C99 50%, #B23A2E 50%)"}
+
+::: {.frame .dark}
+[02 · Campaign playlists]{.label}
+
+::: {.h-huge}
+Do rally playlists\
+carry a message?
+:::
+
+:::: {.stats}
+[**232** rally songs]{} [**13** candidates]{} [**2016–2024**]{}
+::::
+:::
+
+::: {.notes}
+~1 min. Second project: campaign music. Walk-on songs are a deliberate choice, so do they carry the party's and candidate's message? We built a dataset of 232 rally songs — 195 distinct — from 13 presidential candidates across 2016, 2020 and 2024. Same toolkit as the Swift work: LIWC and NRC scores, then PCA. Drawing on work on party asymmetry, we expected Republicans to compete on conservatism — religion and nostalgia — and Democrats to appeal to many groups, with candidates' songs matching their personal brand: Trump and the past, Clinton and care, Biden and authenticity, Harris and joy.
+:::
+
+## {background-color="#F4EFE4"}
+
+::: {.split}
+:::: {.split-text .w860}
+[02 · Campaign playlists]{.label .blue}
+
+[Country is [Republican]{.red}. R&B is [Democratic]{.blue}.]{.h-split style="font-size:100px"}
+
+[Pop and rock are shared ground.]{.sub}
+::::
+
+:::: {.split-fig}
+```{r genre}
+#| fig-width: 9
+#| fig-height: 7
+#| fig-alt: "Bar chart of genre over-use by party: Democrats significantly over-use R&B, Republicans significantly over-use country; pop/rock and other are not significant."
+g <- genre |>
+  mutate(genre = fct_reorder(genre, stdres), side = if_else(stdres > 0, "D", "R"), sig = p_val < 0.05,
+         stars = case_when(p_val < .001 ~ "***", p_val < .01 ~ "**", p_val < .05 ~ "*", TRUE ~ ""))
+ggplot(g, aes(stdres, genre)) +
+  geom_vline(xintercept = 0, colour = "grey40") +
+  geom_vline(xintercept = c(-1.96, 1.96), linetype = "dashed", colour = "grey60") +
+  geom_col(aes(fill = side, alpha = sig, colour = side), width = 0.7, linewidth = 0.7) +
+  geom_text(aes(x = stdres / 2, label = sprintf("%.2f", stdres)), size = 7, fontface = "bold",
+            colour = if_else(g$side == "R" & g$sig, "white", "black"), family = "Helvetica") +
+  geom_text(aes(x = stdres + if_else(stdres >= 0, 0.2, -0.2), label = stars,
+                hjust = if_else(stdres >= 0, 0, 1)), size = 8, fontface = "bold", colour = "grey20") +
+  scale_fill_manual(values = c(D = dem_fill, R = rep_fill), guide = "none") +
+  scale_colour_manual(values = c(D = dem, R = rep), guide = "none") +
+  scale_alpha_manual(values = c(`TRUE` = 1, `FALSE` = 0.35), guide = "none") +
+  scale_x_continuous(limits = c(-5, 5)) +
+  labs(x = "← Republicans over-use     Democrats over-use →", y = NULL,
+       caption = sprintf("Adjusted standardized residuals. χ²(%d) = %.1f, p < .001. Faded: not significant.",
+                         g$df[1], g$chisq[1])) +
+  theme_talk() + theme(plot.background = element_rect(fill = "white", colour = NA),
+                       panel.background = element_rect(fill = "white", colour = NA),
+                       plot.caption = element_text(hjust = 0, colour = "grey35", size = 16))
+```
+::::
+:::
+
+::: {.notes}
+~45 sec. First, genre. Country is strongly Republican and R&B is strongly Democratic — both well beyond chance (chi-square 27, p under .001) — while pop and rock are shared ground. That fits Democrats assembling a coalition of groups and Republicans leaning into a more traditional identity.
+:::
+
+## {background-color="#F4EFE4"}
+
+::: {.split}
+:::: {.split-text style="width:620px; padding-right:32px"}
+[02 · Campaigns]{.label .blue}
+
+[Reading the axes]{.h-split style="font-size:72px"}
+
+[Up: joy, trust and religion — the [golden era]{.red}. Down: future focus. Left: clout and affiliation. Right: "I" talk and authenticity.]{.sub style="font-size:32px"}
+::::
+
+:::: {.split-fig style="padding:24px"}
+![](pca_var.png){fig-alt="Varimax-rotated variable loadings for campaign songs: joy and trust point up, future focus down, clout and affiliation left, I-versus-we language and authenticity right."}
+::::
+:::
+
+::: {.notes}
+~45 sec. These are the varimax-rotated loadings behind the campaign map. The vertical axis is nostalgia: joy, trust and religion at the top, future focus at the bottom. The horizontal axis runs from collective language — clout, affiliation — to individual "I" language and authenticity.
+:::
+
+## {background-color="#F4EFE4"}
+
+::: {.split}
+:::: {.split-text style="width:620px; padding-right:32px"}
+[02 · Campaigns]{.label .blue}
+
+[[Republicans]{.red} play the past.]{.h-split style="font-size:72px"}
+
+[Every GOP campaign sits above the Democratic average on nostalgia.]{.sub style="font-size:32px"}
+::::
+
+:::: {.split-fig style="padding:24px"}
+```{r campaign-pca}
+#| fig-width: 11.5
+#| fig-height: 8.2
+#| fig-alt: "Campaign centroids with bootstrap intervals: Republican campaigns, led by Cruz 2016 and Trump 2024, sit high on the forward-looking-to-golden-era dimension; Democratic campaigns sit lower; the parties overlap on collective-to-individual language."
+camp  <- cents |> filter(level == "campaign")
+party <- cents |> filter(level == "party") |>
+  mutate(lx = if_else(party == "R", c1 - 0.28, c1 - 0.05), ly = if_else(party == "R", c2 + 0.22, c2 - 0.34))
+pcol <- c(D = dem, R = rep)
+ggplot(camp, aes(c1, c2, colour = party)) +
+  geom_vline(xintercept = 0, colour = "grey88") + geom_hline(yintercept = 0, colour = "grey88") +
+  geom_segment(aes(x = lo1, xend = hi1, y = c2, yend = c2), alpha = 0.25, linewidth = 0.5) +
+  geom_segment(aes(x = c1, xend = c1, y = lo2, yend = hi2), alpha = 0.25, linewidth = 0.5) +
+  geom_segment(data = party, aes(x = lo1, xend = hi1, y = c2, yend = c2), linewidth = 1.2, alpha = 0.8) +
+  geom_segment(data = party, aes(x = c1, xend = c1, y = lo2, yend = hi2), linewidth = 1.2, alpha = 0.8) +
+  geom_point(data = party, aes(shape = party), size = 8) +
+  geom_segment(data = party, aes(x = c1, y = c2, xend = lx, yend = ly), linewidth = 0.4) +
+  geom_point(aes(shape = party), size = 3.6) +
+  geom_text_repel(aes(label = label), size = 6.4, seed = 13, family = "Helvetica",
+                  bg.color = "white", bg.r = 0.15, min.segment.length = 0.2, box.padding = 0.3) +
+  geom_label(data = party, aes(lx, ly, label = label), fontface = "bold", size = 6.4,
+             fill = "white", linewidth = 0, family = "Helvetica") +
+  scale_colour_manual(values = pcol, guide = "none") +
+  scale_shape_manual(values = c(D = 16, R = 17), guide = "none") +
+  coord_cartesian(xlim = c(-0.8, 0.65), ylim = c(-1.0, 1.2)) +
+  labs(x = "Collective  →  individual language", y = "Forward-looking  →  golden era") +
+  theme_minimal(base_size = 24, base_family = "Helvetica") +
+  theme(panel.grid.minor = element_blank(), panel.grid.major = element_line(colour = "grey93"))
+```
+::::
+:::
+
+::: {.notes}
+~1.5 min. Red triangles are Republican campaigns, blue circles Democratic; the large markers are party averages with bootstrap intervals. The vertical axis runs from forward-looking to golden-era language. Every Republican campaign sits above the Democratic average — Cruz 2016 and Trump 2024 most of all — consistent with Make America Great Again-style nostalgia. Democrats are more forward-looking and more spread out, fitting a party built from many groups. Which campaign a song belongs to explains about 15 percent of variation on this nostalgia dimension, and essentially none on collective-versus-individual language.
+:::
+
+## {background-color="#14213D"}
+
+::: {.frame .dark}
+[Where things stand]{.label .sky}
+
+[Still in the [studio.]{.coral}]{.h-huge style="line-height:0.9; letter-spacing:-7px"}
+
+:::: {.status-rows}
+::::: {.status}
+[Pre-2016 campaigns]{.name} [[Data gathering]]{.tag .tag-blue}
+:::::
+::::: {.status}
+[Songs vs. speeches]{.name} [[Data gathering + preliminary analysis]]{.tag .tag-red}
+:::::
+::::: {.status}
+[Fandom as home]{.name} [[Analysis]]{.tag .tag-cream}
+:::::
+::::
+:::
+
+::: {.notes}
+~1 min. [Placeholder — say where each project stands: data collected, analyses run, drafts, target venues. Replace each [status] tag with a few words, e.g. "data collected", "first draft", "under review".]
+:::
+
+## {background-color="#14213D"}
+
+::: {.frame .dark}
+[Next · Predicting campaign music]{.label .sky}
+
+[What makes a song a [campaign song]{.red}?]{.h-predict}
+
+<span></span>
+:::
+
+::: {.notes}
+~1 min. Most research on campaign music conditions on the songs that were played — it studies the playlist, not the choice. The open question is what makes something a campaign song in the first place. [Add: candidate comparison set, e.g. charting songs from the same period; features — lyrics, genre, audio, artist; modeling approach.]
+:::
+
+## {background-color="#F4EFE4"}
+
+::: {.frame}
+[Next · Predicting campaign music]{.label .blue}
+
+[The project]{.h-huge style="font-size:160px"}
+
+:::: {.facts}
+::::: {.fact}
+[Data]{.k} [Songs from Billboard Hot 100 (1958-now) + Last.fm streaming data]{.v}
+:::::
+::::: {.fact}
+[Time period]{.k} [US Presidential Candidates (campaigns with >5 songs and multiple events) 2016*-2024]{.v}
+:::::
+::::: {.fact .last}
+[Research Q]{.k} [How do campaign songs compare to songs *not* selected by campaigns?]{.v}
+:::::
+::::
+:::
+
+::: {.notes}
+~1 min. [Placeholder — describe the data and time period for the prediction project.]
+:::
+
+## {background-color="#14213D"}
+
+::: {.frame .dark}
+[]{.label}
+
+::: {.h-thanks}
+[Thank]{.blue} [you!]{.coral}
+:::
+
+[clipperton@uchicago.edu]{.lede .mist}
+:::
+
+<div class="bar-bottom"></div>
+
+::: {.notes}
+~15 sec. The through-line: the words we choose to sing, play at rallies and post online carry measurable signals about emotion, identity and politics. Thank you — happy to take questions.
+:::
