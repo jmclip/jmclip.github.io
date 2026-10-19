@@ -11,8 +11,19 @@ navbar:
           href: courses.html
         - text: 'Teaching Philosophy'
           href: teaching.html
+        - text: '---------'
+        - text: 'Teaching Statement (PDF)'
+          href: papers/Clipperton_teaching_statement.pdf
+        - text: 'Evidence of Teaching Effectiveness (PDF)'
+          href: papers/Clipperton_teaching_effectiveness.pdf
     - text: 'Research'
-      href: research.html
+      menu:
+        - text: 'Research & Publications'
+          href: research.html
+        - text: 'Research Statement (PDF)'
+          href: papers/Clipperton_research_statement.pdf
+        - text: 'CV (PDF)'
+          href: papers/Clipperton_CV.pdf
     - icon: fa-brands fa-orcid
       href: https://orcid.org/0000-0001-8833-0052
     - icon: fa-github fa-lg
