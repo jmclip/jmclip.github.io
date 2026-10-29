@@ -8,7 +8,7 @@ format:
     height: 1080
     margin: 0
     center: false
-    transition: slide
+    transition: none
     slide-number: false
     controls: true
     title-slide-attributes:
