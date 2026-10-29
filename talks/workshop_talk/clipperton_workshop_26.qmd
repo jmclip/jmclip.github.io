@@ -138,9 +138,9 @@ interwoven.
 :::: {.split-text .w640 .rust-panel}
 [01 · Taylor Swift]{.label .mint}
 
-[What the map is made of]{.h-split style="font-size:96px"}
+[Lyrics and emotion in song]{.h-split style="font-size:96px"}
 
-[Left to right: lyric-focused to [emotion-focused]{.mint} language. Bottom to top: negative to positive tone.]{.sub}
+[Left to right: [**lyric-focused**]{.mint} to [**emotion-focused**]{.mint} language. Bottom to top: [**negative**]{.mint} to [**positive tone**.]{.mint}]{.sub}
 ::::
 
 :::: {.split-fig .fig-orange}
@@ -348,7 +348,7 @@ ggplot(g, aes(stdres, genre)) +
 
 [Reading the axes]{.h-split style="font-size:72px"}
 
-[Up: joy, trust and religion — the [golden era]{.red}. Down: future focus. Left: clout and affiliation. Right: "I" talk and authenticity.]{.sub style="font-size:32px"}
+[Up: joy, trust and religion — the [**golden era**]{.red}. Down: [future focus]{.blue}. Left: **clout and affiliation**. Right: **"I" talk and authenticity**.]{.sub style="font-size:32px"}
 ::::
 
 :::: {.split-fig style="padding:24px"}
